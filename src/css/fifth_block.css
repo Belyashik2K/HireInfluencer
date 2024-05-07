@@ -1,0 +1,24 @@
+.fifth_block {
+    position: relative;
+    height: 520px;
+}
+
+.fifth_block__text {
+    position: absolute;
+    top: 18%;
+    right: 180px;
+}
+
+.fifth_block__images {
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+}
+
+.fifth_block__card {
+    margin-right: 34px;
+}
+
+#card_2 {
+    margin-top: 65px;
+}

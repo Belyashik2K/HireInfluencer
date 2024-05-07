@@ -1,0 +1,39 @@
+.third_block {
+    height: 430px;
+}
+
+.third_block__logo {
+    display: flex;
+    justify-content: center;
+    padding-left: 532px;
+    padding-top: 120px;
+}
+
+.third_block__title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 109%;
+    text-align: center;
+    color: #000;
+}
+
+.third_block__description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #6c6c6c;
+}
+
+.third_block__partners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 95px;
+}
+
+.partner {
+    margin-right: 100px;
+}

@@ -1,0 +1,43 @@
+.fourth_block {
+    position: relative;
+    margin-left: 140px;
+    height: 520px;
+}
+
+.advantages__preambula {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 109%;
+    color: #6f764d;
+    margin-bottom: 17px;
+}
+
+.advantages__title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 114%;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+.advantages__description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    color: #6c6c6c;
+    margin-bottom: 21px;
+}
+
+.fourth_block__text {
+    position: absolute;
+    left: 0;
+    top: 18%;
+}
+
+.fourth_block__image {
+    position: absolute;
+    right: 0;
+    top: 15%;
+}

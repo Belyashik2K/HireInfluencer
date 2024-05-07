@@ -1,0 +1,16 @@
+.sixth_block {
+    position: relative;
+    height: 400px;
+}
+
+.sixth_block__text {
+    position: absolute;
+    top: 15%;
+    left: 140px;
+}
+
+.sixth_block__image {
+    position: absolute;
+    right: -20px;
+    top: 15%;
+}

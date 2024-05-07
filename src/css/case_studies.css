@@ -1,0 +1,104 @@
+.case_studies {
+    position: relative;
+    height: 600px;
+}
+
+.case_studies__header {
+    display: grid; 
+    position: absolute; 
+    align-items: center; 
+    justify-content: center;
+    top: 120px; 
+    left: 552px;
+}
+
+.case_studies__title {
+    grid-row: 1;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 114%;
+    color: #000;
+    margin-bottom: 22px;
+}
+
+.case_studies__additional_info {
+    grid-row: 2;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 114%;
+    color: #6f764d;
+    margin-top: 0;
+    margin-left: -10px;  
+}
+
+.case_studies__arrow {
+    grid-row: 2;
+    margin-left: -20px;
+    margin-top: -22px;
+}
+
+.statistic__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 109%;
+    text-align: center;
+    color: #6f764d;
+}
+
+.statistic__description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 109%;
+    text-align: center;
+    color: #6c6c6c;
+}
+
+.statistic {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 120px 120px;
+    grid-gap: 0px 0px;
+    grid-template-areas: 
+        "statistic__title statistic__title statistic__title"
+        "statistic__description statistic__description statistic__description";
+    position: absolute;
+    right: 84px;
+}
+
+.case_studies__text_description {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    color: #6c6c6c;
+}
+
+.case_studies__text_name {
+    margin-top: 0;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    color: #6f764d;
+}
+
+.canon_gray {
+    margin-bottom: 25px;
+}
+
+.case_studies__text {
+    position: absolute;
+    top: 45px;
+    left: 176px;
+}
+
+.case_studies__info {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 300px;
+}

@@ -1,0 +1,12 @@
+html {
+    width: 1400px;
+    height: 5578px;
+}
+
+:root {
+    --font-family: "Inter", sans-serif;
+    --second-family: "Mulish", sans-serif;
+    --third-family: "Rammetto One", sans-serif;
+    --font3: "Poppins", sans-serif;
+    --font4: "Devonshire", sans-serif;
+  }

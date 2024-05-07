@@ -1,0 +1,125 @@
+.first_block {
+    position: relative;
+    height: 430px;
+}
+
+.first_girl {
+    position:absolute;
+    bottom: 0px;
+    left: -30px;
+}
+
+.second_girl {
+    position: absolute;
+    bottom: 0px; 
+    right: 40px;
+}
+
+#grayscale {
+  filter: grayscale(100%);
+}
+
+#rect {
+    position: absolute;
+    bottom: 0px; 
+    right: 50px;
+    width: 300px;
+    height: 320px;
+    background-color: #494F30;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+#rect_2 {
+    position: absolute;
+    bottom: 0px; 
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: #BABFA3;
+    border-top-left-radius: 50% 50%;
+    border-top-right-radius: 50% 50%;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.first_block__text {
+    padding-top: 70px;
+}
+
+.first_block__title {
+    font-family: var(--third-family);;
+    font-weight: 1500;
+    font-size: 60px;
+    line-height: 109%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.first_block__description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: #6c6c6c;
+    margin-bottom: 35px;
+}
+
+mark.green {
+    background-color: white;
+    color: #6F764D;
+}
+
+.first_block__button_need_inf {
+    width: 208px;
+    height: 45px;
+    background: #6f764d;
+    color: #ffffff;
+    border: none;
+    position: absolute;
+    left: calc(51% - 208px - 19px);
+    bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 109%;
+    text-align: center;
+}
+
+.first_block__button_need_inf:hover {
+    background: #ffffff;
+    border:#000 1px solid;
+    color: #000000;
+    border-radius: 2px;
+}
+
+.first_block__button_be_inf{
+    width: 208px;
+    height: 45px;
+    background: #ffffff;
+    border:#000 1px solid;
+    color: #000000;
+    border-radius: 2px;
+    position: absolute;
+    left: 51%;
+    bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 109%;
+    text-align: center;
+}
+
+.first_block__button_be_inf:hover {
+    background: #6f764d;
+    color: #ffffff;
+    border: none;
+}
+
+.first_block__logo {
+    position: absolute;
+    left: 55.5%;
+}
