@@ -1,0 +1,175 @@
+.influencers {
+    height: 500px;
+}
+
+.influencers__social {
+    border: 1px solid rgba(111, 118, 77, 0.17);
+    width: 114px;
+    height: 35px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 109%;
+    text-align: center;
+    color: rgba(111, 118, 77, 0.69);
+    margin: 10px 0px 0px 20px;
+}
+
+.influencers__social:hover {
+    width: 114px;
+    height: 35px;
+    background: #6f764d;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 109%;
+    text-align: center;
+    color: #fff;
+}
+
+.influencers__title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 109%;
+    color: #6f764d;
+    margin-right: 170px;
+    margin-left: 35px;
+}
+
+.influencers__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.influencers__header {
+    display: flex;
+    justify-content: center;
+
+}
+
+.influencers__card__buttons {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 26px;
+    left: 7px;
+}
+
+.influencers__card {
+    border: 1px solid rgba(111, 118, 77, 0.21);
+    border-radius: 5px;
+    width: 240px;
+    height: 318px;
+    position: relative;
+}
+
+button img {
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-right: 15px;
+}
+
+.facebook-like-button {
+    width: 91px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(74, 122, 255, .07);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.facebook-like-button:hover {
+    background: rgba(74, 122, 255, 1);
+}
+  
+.facebook-like-button .icon {
+    display: inline-block;
+    margin-right: -10px;
+}
+  
+.facebook-like-button .text {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 111%;
+    letter-spacing: 0.03em;
+    color: #333;
+    margin-top: 3px;
+}
+  
+.instagram-like-button {
+    width: 91px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(35, 4, 157, .07);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-like-button:hover {
+    background: rgb(219, 35, 11, 0.7);
+}
+  
+.instagram-like-button .icon {
+    display: inline-block;
+    margin-right: -10px;
+}
+  
+.instagram-like-button .text {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 111%;
+    letter-spacing: 0.03em;
+    color: #333;
+    margin-top: 3px;
+}
+
+#socials_buttons {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.influencers__card__stars {
+    position: absolute;
+    bottom: 85px;
+    left: 23.5%;
+}
+
+.influencers__card__location {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 111%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #6c6c6c;
+    margin-top: 0px;
+}
+
+.influencers__card__title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 111%;
+    text-align: center;
+    color: #000;
+    margin-bottom: 0px;
+}
+
+.influencers__card__image {
+    display: flex;
+    justify-content: center;
+    margin-top: 11px;
+}
