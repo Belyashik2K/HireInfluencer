@@ -1,12 +1,20 @@
 .third_block {
-    height: 430px;
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+}
+
+.third_block__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 0px;
 }
 
 .third_block__logo {
-    display: flex;
-    justify-content: center;
-    padding-left: 532px;
-    padding-top: 120px;
+    margin-bottom: 40px;
 }
 
 .third_block__title {
@@ -16,6 +24,7 @@
     line-height: 109%;
     text-align: center;
     color: #000;
+    margin-bottom: 18px;
 }
 
 .third_block__description {
@@ -24,16 +33,13 @@
     font-size: 15px;
     text-align: center;
     color: #6c6c6c;
+    margin-bottom: 50px;
 }
 
 .third_block__partners {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
-    margin-left: 95px;
-}
-
-.partner {
-    margin-right: 100px;
+    gap: 80px;
+    margin: 0px 180px 0px 180px;
 }

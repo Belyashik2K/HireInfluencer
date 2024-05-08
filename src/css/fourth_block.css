@@ -1,6 +1,5 @@
 .fourth_block {
-    position: relative;
-    margin-left: 140px;
+    display: flex;
     height: 520px;
 }
 
@@ -11,6 +10,9 @@
     line-height: 109%;
     color: #6f764d;
     margin-bottom: 17px;
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 15px;
 }
 
 .advantages__title {
@@ -20,6 +22,8 @@
     line-height: 114%;
     color: #000;
     margin-bottom: 24px;
+    margin-top: 0px;
+    margin-right: 15px;
 }
 
 .advantages__description {
@@ -28,16 +32,23 @@
     font-size: 15px;
     color: #6c6c6c;
     margin-bottom: 21px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 15px;
 }
 
 .fourth_block__text {
-    position: absolute;
-    left: 0;
-    top: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 0px 0px 180px;  
 }
 
 .fourth_block__image {
-    position: absolute;
-    right: 0;
-    top: 15%;
+    margin-right: 0px;
+}
+
+.loader {
+    margin-top: 0px;
+    margin-left: 0px;
 }

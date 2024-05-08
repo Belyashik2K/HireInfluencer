@@ -17,3 +17,6 @@
     --font4: "Devonshire", sans-serif;
   }
 
+button {
+    cursor: pointer;
+}   

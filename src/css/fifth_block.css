@@ -1,18 +1,20 @@
 .fifth_block {
-    position: relative;
+    display: flex;
     height: 520px;
 }
 
 .fifth_block__text {
-    position: absolute;
-    top: 18%;
-    right: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 230px 0px 0px;
 }
 
 .fifth_block__images {
     display: flex;
     align-items: center;
-    margin-left: 140px;
+    margin-left: 180px;
+    margin-top: 0px;
 }
 
 .fifth_block__card {
@@ -20,5 +22,5 @@
 }
 
 #card_2 {
-    margin-top: 65px;
+    margin-top: 80px;
 }
