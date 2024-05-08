@@ -15,12 +15,12 @@
 .man_with_rupor {
     position: absolute;
     bottom: 0;
-    left: 15px;
+    left: 66px;
 }
 
 .start_using_now__icons {
     display: flex;
-    gap: 150px;
+    gap: 200px;
 }
 
 .start_using_now__icon {
@@ -68,8 +68,12 @@
 }
 
 #es_1 {
-    width: 470px;
+    width: 521px;
     height: 233px;
     margin: 0px 0px 0px 0px;
     flex: none;
+}
+
+.start_using_now__icon_img {
+    margin-bottom: 10px;
 }
