@@ -1,23 +1,24 @@
 .free_trial {
-    margin-bottom: 120px;
+    margin-top: 100px;
+    margin-bottom: 145px;
 }
 
 .free_trial__background {
-    position: relative;
     width: 1040px;
     height: 392px;
     background: white;
-    margin-left: 186px;
+}
+
+.free_trial__header {
+    display: flex;
+    flex-direction: column;
 }
 
 .free_trial_registration {
-    z-index: 9998;
-    position: absolute;
-    top: 35px;
     border-radius: 5px;
     width: 1040px;
-    height: 331px;
-    background: #6F764D;
+    height: 390px;
+    background-image: url("../images/banner.png");
 }
 
 .free_trial__title {
@@ -27,7 +28,7 @@
     line-height: 109%;
     text-align: center;
     color: #fff;
-    margin-top: 90px;
+    margin-top: 120px;
     margin-bottom: 13px;
 }
 
@@ -52,17 +53,5 @@
     line-height: 109%;
     text-align: center;
     color: #fff;
-    position: absolute;
-    left: 420px;
     cursor: pointer;
-}
-
-.free_trial__image {
-    position: relative;
-    z-index: 9999;
-}
-
-#face_5 {
-    width: 69px;
-    height: 69px;
 }
