@@ -1,5 +1,5 @@
 .influencers {
-    height: 500px;
+    height: 550px;
 }
 
 .influencers__social {
@@ -46,7 +46,6 @@
 .influencers__header {
     display: flex;
     justify-content: center;
-
 }
 
 .influencers__card__buttons {

@@ -1,0 +1,65 @@
+.free_trial__background {
+    position: relative;
+    width: 1040px;
+    height: 392px;
+    background: white;
+    margin-left: 186px;
+
+}
+
+.free_trial_registration {
+    z-index: 9998;
+    position: absolute;
+    top: 35px;
+    border-radius: 5px;
+    width: 1040px;
+    height: 331px;
+    background: #6F764D;
+}
+
+.free_trial__title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 109%;
+    text-align: center;
+    color: #fff;
+    margin-top: 90px;
+    margin-bottom: 13px;
+}
+
+.free_trial__description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.free_trial__button {
+    border: 2px solid #fff;
+    width: 218px;
+    height: 45px;
+    background: #6F764D;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 109%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 420px;
+    cursor: pointer;
+}
+
+.free_trial__image {
+    position: relative;
+    z-index: 9999;
+}
+
+#face_5 {
+    width: 69px;
+    height: 69px;
+}
