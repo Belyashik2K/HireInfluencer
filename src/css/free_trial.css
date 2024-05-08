@@ -55,3 +55,9 @@
     color: #fff;
     cursor: pointer;
 }
+
+.free_trial__button:hover {
+    background: #6F764D;
+    color: #000;
+    border: 2px solid #000;
+}
