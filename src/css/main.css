@@ -1,13 +1,13 @@
-/* * {
-    margin: 0;
+* {
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
-} */
+}
 
-html {
+/* html {
     width: 1400px;
     height: 5578px;
-}
+} */
 
 :root {
     --font-family: "Inter", sans-serif;

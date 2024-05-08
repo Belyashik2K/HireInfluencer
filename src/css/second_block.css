@@ -2,17 +2,12 @@
     display: flex;
     background: #6f764d;
     width: 100%;
-    height: 677px;
-    
+    height: 677px;   
 }
 
 .second_block__text {
     flex-direction: column;
     justify-content: center;
-    padding-top: 262px;
-    padding-bottom: 100px;
-    padding-left: 175px;
-    padding-right: 100px;
 }
 
 .second_block__title {
@@ -34,15 +29,15 @@
 
 .second_block__cards {
     display: flex;
-    margin-top: 130px;
+    justify-content: center;
 }
 
 .second_block__card {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 276px;
     height: 436px;
     border: white 4px solid;
-    border-radius: 2px;
     border-radius: 10px 10px 10px 10px; 
     margin-right: 45px;
 }
@@ -53,28 +48,31 @@
     font-size: 24px;
     line-height: 109%;
     color: #fff;
-    margin: 0px 0px 0px 0px;
-    padding: 30px 0px 0px 23px;
+    text-align: left;
+    margin-left: 24px;
 }
 
 .second_block__card__description {
     font-family: var(--font3);
-    margin-left: 23px;
     width: 220px;
     height: 161px;
     font-weight: 400;
     font-size: 15px;
     line-height: 150%;
-    text-align: justify;
+    text-align: left;
     color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 12px;
+    margin-left: 24px;
 }
 
 .second_block__card_edited {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
     width: 276px;
     height: 436px;
     border: white 4px solid;
-    border-radius: 2px;
     border-radius: 10px 10px 10px 10px; 
     margin-right: 45px;
     background: white;
@@ -85,8 +83,9 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 109%;
-    margin: 0px 0px 0px 0px;
     color: #000;
+    text-align: left;
+    margin-left: 24px;
 }
 
 .second_block__card__description_edited {
@@ -97,20 +96,18 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 150%;
-    text-align: justify;
+    text-align: left;
+    margin-bottom: 12px;
+    margin-left: 24px;
     color: #6c6c6c;
 }
 
 .second_block__card__image {
-    padding: 45px 0px 0px 19px;
-}
-
-#second_block__card__title_position {
-    padding: 30px 0px 0px 23px;
+    margin-top: 44px;
+    margin-left: 18px;
 }
 
 .arrow {
-    position: absolute;
-    bottom: 24px; 
-    left: 24px;
+    margin-left: 24px;
+    margin-bottom: 24px;
 }

@@ -1,18 +1,7 @@
 .first_block {
-    position: relative;
+    display: flex;
+    justify-content: center;
     height: 430px;
-}
-
-.first_girl {
-    position:absolute;
-    bottom: 0px;
-    left: -30px;
-}
-
-.second_girl {
-    position: absolute;
-    bottom: 0px; 
-    right: 40px;
 }
 
 #grayscale {
@@ -20,33 +9,30 @@
 }
 
 #rect {
-    position: absolute;
-    bottom: 0px; 
-    right: 50px;
+    display: flex;
     width: 300px;
     height: 320px;
     background-color: #494F30;
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
-    padding-right: 50px;
     box-sizing: border-box;
+    margin-bottom: 0px;
 }
 
 #rect_2 {
-    position: absolute;
-    bottom: 0px; 
-    left: 50px;
+    display: flex;
     width: 300px;
     height: 300px;
     background-color: #BABFA3;
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
-    padding-right: 50px;
     box-sizing: border-box;
+    margin-bottom: 0px;
 }
 
 .first_block__text {
-    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
 }
 
 .first_block__title {
@@ -65,61 +51,64 @@
     font-size: 15px;
     text-align: center;
     color: #6c6c6c;
-    margin-bottom: 35px;
+    margin-bottom: 27px;
 }
 
-mark.green {
-    background-color: white;
-    color: #6F764D;
+.green {
+    color: #6f764d;
 }
 
-.first_block__button_need_inf {
+#first_block__button_need_inf {
     width: 208px;
     height: 45px;
     background: #6f764d;
     color: #ffffff;
     border: none;
-    position: absolute;
-    left: calc(51% - 208px - 19px);
-    bottom: 40px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 109%;
     text-align: center;
+    transition: 0.5s;
 }
 
-.first_block__button_need_inf:hover {
+#first_block__button_need_inf:hover {
     background: #ffffff;
     border:#000 1px solid;
     color: #000000;
     border-radius: 2px;
 }
 
-.first_block__button_be_inf{
+#first_block__button_be_inf{
     width: 208px;
     height: 45px;
     background: #ffffff;
     border:#000 1px solid;
     color: #000000;
     border-radius: 2px;
-    position: absolute;
-    left: 51%;
-    bottom: 40px;
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 109%;
     text-align: center;
+    transition: 0.5s;
 }
 
-.first_block__button_be_inf:hover {
+#first_block__button_be_inf:hover {
     background: #6f764d;
     color: #ffffff;
     border: none;
+}
+
+.first_bloсk__buttons {
+    display: flex;
 }
 
 .first_block__logo {
-    position: absolute;
-    left: 55.5%;
+    margin-right: 0px;
+}
+
+.first_block__button {
+    margin-left: 10px;
+    margin-right: 10px;
 }
