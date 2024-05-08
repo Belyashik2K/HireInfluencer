@@ -1,10 +1,13 @@
+.free_trial {
+    margin-bottom: 120px;
+}
+
 .free_trial__background {
     position: relative;
     width: 1040px;
     height: 392px;
     background: white;
     margin-left: 186px;
-
 }
 
 .free_trial_registration {
