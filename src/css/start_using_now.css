@@ -1,28 +1,26 @@
 .start_using_now {
     position: relative;
+    display: flex;
+    flex-direction: column;
     height: 500px;
 }
 
 .start_using_now__background {
-    position: absolute;
+    display: flex;
     background: #6F764D;
-    bottom: 0;
     width: 100%;
     height: 233px;
 }
 
 .man_with_rupor {
     position: absolute;
-    left: 60px;
     bottom: 0;
+    left: 15px;
 }
 
 .start_using_now__icons {
-    margin-right: 0%;
-    position: absolute;
-    top: 60px;
-    right: 0;
     display: flex;
+    gap: 150px;
 }
 
 .start_using_now__icon {
@@ -30,7 +28,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 158px;
 }
 
 .icon__description {
@@ -57,18 +54,22 @@
     height: 46.03px;
 }
 
-.start_using_now__header {
-    position: absolute;
-    top: 145px;
-    left: 705px;
-
-
-}
-
 .start_using_now__title {
     font-family: var(--third-family);
     font-weight: 400;
     font-size: 36px;
     line-height: 109%;
     color: #000;
+}
+
+.empty_space {
+    width: 100%;
+    height: 267px;
+}
+
+#es_1 {
+    width: 470px;
+    height: 233px;
+    margin: 0px 0px 0px 0px;
+    flex: none;
 }
