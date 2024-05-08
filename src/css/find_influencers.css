@@ -1,4 +1,6 @@
 .influencers {
+    display: flex;
+    flex-direction: column;
     height: 550px;
 }
 
@@ -12,7 +14,6 @@
     line-height: 109%;
     text-align: center;
     color: rgba(111, 118, 77, 0.69);
-    margin: 10px 0px 0px 20px;
 }
 
 .influencers__social:hover {
@@ -33,42 +34,54 @@
     font-size: 36px;
     line-height: 109%;
     color: #6f764d;
-    margin-right: 170px;
-    margin-left: 35px;
+    margin-right: 260px;
+    margin-left: 0px;
 }
 
 .influencers__buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    margin-right: 0px;
+    gap: 20px;
 }
 
 .influencers__header {
     display: flex;
     justify-content: center;
+    align-items: center; 
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-bottom: 25px;
 }
 
 .influencers__card__buttons {
-    position: absolute;
     display: flex;
     justify-content: center;
-    bottom: 26px;
-    left: 7px;
+    gap: 20px;
 }
 
 .influencers__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 1px solid rgba(111, 118, 77, 0.21);
     border-radius: 5px;
     width: 240px;
     height: 318px;
     position: relative;
-    margin: 0px 16px 0px 16px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .influencers__cards {
     display: flex;
-    justify-content: center;
-    margin-left: 30px;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 0px;
 }
 
 button img {
@@ -107,7 +120,6 @@ button img {
     line-height: 111%;
     letter-spacing: 0.03em;
     color: #333;
-    margin-top: 3px;
 }
   
 .instagram-like-button {
@@ -139,18 +151,11 @@ button img {
     line-height: 111%;
     letter-spacing: 0.03em;
     color: #333;
-    margin-top: 3px;
-}
-
-#socials_buttons {
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .influencers__card__stars {
-    position: absolute;
-    bottom: 89px;
-    left: 23.5%;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 .influencers__card__location {
@@ -161,7 +166,7 @@ button img {
     letter-spacing: 0.03em;
     text-align: center;
     color: #6c6c6c;
-    margin-top: 0px;
+    margin-top: 6px;
 }
 
 .influencers__card__title {
@@ -171,11 +176,13 @@ button img {
     line-height: 111%;
     text-align: center;
     color: #000;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .influencers__card__image {
     display: flex;
     justify-content: center;
-    margin-top: 11px;
+    margin-top: 16px;
+    margin-bottom: 0px;
 }
