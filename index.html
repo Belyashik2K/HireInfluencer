@@ -17,18 +17,23 @@
     <link rel="stylesheet" href="src/css/first_block.css">
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/main.css">
+    <script src="src/js/cards.js" defer></script>
 </head>
 <body>
     <div class="container">
 
         <header class="header">
-            <img class="logo" src="src/images/logo.png" alt="logo" class="header__logo">
+            <a href="#">
+                <img class="logo" src="src/images/logo.png" alt="logo" class="header__logo">
+            </a>
 
             <nav class="header__nav">
-                <a href="#" class="header__link">Home</a>
-                <a href="#" class="header__link">About</a>
-                <a href="#" class="header__link">Influencer</a>
-                <a href="#" class="header__link">Contact</a>
+                <ul class="header__nav__ul">
+                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Home</a></li>
+                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">About</a></li>
+                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Influencer</a></li>
+                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Contact</a></li>
+                </ul>
             </nav>
 
             <button class="header__button">Create account</button>    
@@ -236,10 +241,10 @@
                 <h1 class="influencers__title">Find influencers <br> in seconds</h1>
 
                 <div class="influencers__buttons">
-                    <button class="influencers__social">Facebook</button>
-                    <button class="influencers__social">Instagram</button>
-                    <button class="influencers__social">Twitter</button>
-                    <button class="influencers__social">Tiktok</button>    
+                    <button class="influencers__social" id="fb_cat" onclick="updateCards(this.id)">Facebook</button>
+                    <button class="influencers__social" id="inst_cat" onclick="updateCards(this.id)">Instagram</button>
+                    <button class="influencers__social" id="tw_cat" onclick="updateCards(this.id)">Twitter</button>
+                    <button class="influencers__social" id="tt_cat" onclick="updateCards(this.id)">Tiktok</button>    
                 </div>
                 
             </div>
@@ -247,106 +252,99 @@
             <div class="influencers__cards">
 
                 <div class="influencers__card">
-                    <div class="influencers__card__image">
-                        <img src="/src/images/round.png" alt="influencer_1" class="influencers__round">
-                        <!-- <img src="/src/images/faces/1.png" alt="influencer_1" class="influencers__card__image"> -->
+                    
+                    <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
 
-                    </div>
-                    <h2 class="influencers__card__title">Jabin Islam</h2>
-                    <p class="influencers__card__location">Chittagong, Bangladesh</p>
+                    <h2 class="influencers__card__title"></h2>
+                    <p class="influencers__card__location"></p>
                     <img src="/src/images/stars_3.png" alt="stars" class="influencers__card__stars">
 
                     <div class="influencers__card__buttons">
-                        <button class="facebook-like-button" id="socials_buttons">
+                        <a class="facebook-like-button" id="socials_buttons">
                             <span class="icon">
                                 <img src="/src/images/socials/facebook.png" alt="facebook" class="facebook">
                             </span>
-                            <span class="text">1,6M</span>
-                        </button>
-                        <button class="instagram-like-button" id="socials_buttons">
+                            <span class="text"></span>
+                        </a>
+                        <a class="instagram-like-button" id="socials_buttons">
                             <span class="icon">
                                 <img src="/src/images/socials/instagram.png" alt="instagram" class="instagram">
                             </span>
-                            <span class="text">698K</span>
-                        </button>
+                            <span class="text"></span>
+                        </a>
                     </div>    
                 </div>
 
                 <div class="influencers__card">
-                    <div class="influencers__card__image">
-                        <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
-                        <!-- <img src="/src/images/faces/1.png" alt="influencer_1" class="influencers__card__image"> -->
+                    
+                    <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
 
-                    </div>
-                    <h2 class="influencers__card__title">Zia Uddins</h2>
-                    <p class="influencers__card__location">LA, USA</p>
+                    <h2 class="influencers__card__title"></h2>
+                    <p class="influencers__card__location"></p>
                     <img src="/src/images/stars_3.png" alt="stars" class="influencers__card__stars">
 
                     <div class="influencers__card__buttons">
-                        <button class="facebook-like-button" id="socials_buttons">
+                        <a class="facebook-like-button" id="socials_buttons">
                             <span class="icon">
                                 <img src="/src/images/socials/facebook.png" alt="facebook" class="facebook">
                             </span>
-                            <span class="text">1,6M</span>
-                        </button>
-                        <button class="instagram-like-button" id="socials_buttons">
+                            <span class="text"></span>
+                        </a>
+                        <a class="instagram-like-button" id="socials_buttons">
                             <span class="icon">
                                 <img src="/src/images/socials/instagram.png" alt="instagram" class="instagram">
                             </span>
-                            <span class="text">698K</span>
-                        </button>
+                            <span class="text"></span>
+                        </a>
                     </div>    
                 </div>
 
                 <div class="influencers__card">
-                    <div class="influencers__card__image">
-                        <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
-                        <!-- <img src="/src/images/faces/1.png" alt="influencer_1" class="influencers__card__image"> -->
+                    
+                    <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
 
-                    </div>
-                    <h2 class="influencers__card__title">Tareq Aziz</h2>
-                    <p class="influencers__card__location">Chittagong, Bangladesh</p>
+                    <h2 class="influencers__card__title"></h2>
+                    <p class="influencers__card__location"></p>
                     <img src="/src/images/stars_3.png" alt="stars" class="influencers__card__stars">
 
                     <div class="influencers__card__buttons">
-                        <button class="facebook-like-button" id="socials_buttons">
+                        <a class="facebook-like-button" id="socials_buttons">
                             <span class="icon">
                                 <img src="/src/images/socials/facebook.png" alt="facebook" class="facebook">
                             </span>
-                            <span class="text">1,6M</span>
-                        </button>
-                        <button class="instagram-like-button" id="socials_buttons">
+                            <span class="text"></span>
+                        </a>
+                        <a class="instagram-like-button" id="socials_buttons">
                             <span class="icon">
                                 <img src="/src/images/socials/instagram.png" alt="instagram" class="instagram">
                             </span>
-                            <span class="text">698K</span>
-                        </button>
-                    </div>   
+                            <span class="text"></span>
+                        </a>
+                    </div>    
                 </div>
 
                 <div class="influencers__card">
-                    <div class="influencers__card__image">
-                        <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
-                        <!-- <img src="/src/images/faces/1.png" alt="influencer_1" class="influencers__card__image"> -->
-                    </div>
-                    <h2 class="influencers__card__title">Saimon Aflame</h2>
-                    <p class="influencers__card__location">Chittagong, Bangladesh</p>
+                    
+                    <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
+
+                    <h2 class="influencers__card__title"></h2>
+                    <p class="influencers__card__location"></p>
                     <img src="/src/images/stars_3.png" alt="stars" class="influencers__card__stars">
 
                     <div class="influencers__card__buttons">
-                        <button class="facebook-like-button" id="socials_buttons">
+                        <a class="facebook-like-button" id="socials_buttons">
                             <span class="icon">
                                 <img src="/src/images/socials/facebook.png" alt="facebook" class="facebook">
                             </span>
-                            <span class="text">1,6M</span>
-                        </button>
-                        <button class="instagram-like-button" id="socials_buttons">
+                            <span class="text"></span>
+                        </a>
+                        <a class="instagram-like-button" id="socials_buttons">
                             <span class="icon">
                                 <img src="/src/images/socials/instagram.png" alt="instagram" class="instagram">
                             </span>
-                            <span class="text">698K</span>
-                        </button>
-                    </div>  
+                            <span class="text"></span>
+                        </a>
+                    </div>    
                 </div>
 
             </div>
@@ -375,25 +373,28 @@
             <div class="footer__search">
                 <p class="footer__preambula">Search</p>
                 <nav class="footer__search_nav">
-                    <a href="#" class="footer__link">Facebook Influencer</a>
-                    <a href="#" class="footer__link">Twitter Influencer</a>
-                    <a href="#" class="footer__link">Instagram Influencer</a>
-                    <a href="#" class="footer__link">Snapchat Influiencer</a>
-                    <a href="#" class="footer__link">Youtube Influencer</a>
-                    <a href="#" class="footer__link">Tiktok Influencer</a>
+                    <ul class="footer__search_ul">
+                        <li class="footer__search_item"><a href="https://belyashik2k.tech/" class="footer__link">Facebook Influencer</a></li>
+                        <li class="footer__search_item"><a href="https://belyashik2k.tech/" class="footer__link">Twitter Influencer</a></li>
+                        <li class="footer__search_item"><a href="https://belyashik2k.tech/" class="footer__link">Instagram Influencer</a></li>
+                        <li class="footer__search_item"><a href="https://belyashik2k.tech/" class="footer__link">Snapchat Influiencer</a></li>
+                        <li class="footer__search_item"><a href="https://belyashik2k.tech/" class="footer__link">Youtube Influencer</a></li>
+                        <li class="footer__search_item"><a href="https://belyashik2k.tech/" class="footer__link">Tiktok Influencer</a></li>
+                    </ul>                    
                 </nav>
             </div>
 
             <div class="footer__information">
                 <p class="footer__preambula">Information</p>
                 <nav class="footer__information_nav">
-                    <a href="#" class="footer__link">About Our Company</a>
-                    <a href="#" class="footer__link">FAQ</a>
-                    <a href="#" class="footer__link">Support</a>
-                    <a href="#" class="footer__link">Guideline</a>
+                    <ul class="footer__information_ul">
+                        <li class="footer__information_item"><a href="https://belyashik2k.tech/" class="footer__link">About Our Company</a></li>
+                        <li class="footer__information_item"><a href="https://belyashik2k.tech/" class="footer__link">FAQ</a></li>
+                        <li class="footer__information_item"><a href="https://belyashik2k.tech/" class="footer__link">Support</a></li>
+                        <li class="footer__information_item"><a href="https://belyashik2k.tech/" class="footer__link">Guideline</a></li>
+                    </ul>
                 </nav>
             </div>
-
         </footer>
     </div>
 </body>

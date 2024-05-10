@@ -7,13 +7,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 230px 0px 0px;
 }
 
 .fifth_block__images {
     display: flex;
     align-items: center;
-    margin-left: 180px;
     margin-top: 0px;
 }
 

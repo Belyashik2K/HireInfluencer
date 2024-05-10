@@ -41,11 +41,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0px 0px 0px 180px;  
-}
-
-.fourth_block__image {
-    margin-right: 0px;
 }
 
 .loader {

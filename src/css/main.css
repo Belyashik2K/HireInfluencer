@@ -19,5 +19,15 @@
 
 button {
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.5s;
 }   
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}

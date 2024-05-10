@@ -51,8 +51,6 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-    margin-left: 180px;
-    margin-right: 180px;
     margin-bottom: 25px;
 }
 
@@ -77,14 +75,13 @@
 }
 
 .influencers__cards {
+    gap: 50px;
     display: flex;
     justify-content: space-between;
-    margin-left: 180px;
-    margin-right: 180px;
     margin-top: 0px;
 }
 
-button img {
+a img {
     width: 20px;
     height: 20px;
     margin-top: 4px;
@@ -181,8 +178,18 @@ button img {
 }
 
 .influencers__card__image {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
+    margin-top: 32px;
     margin-bottom: 0px;
+}
+
+.selected {
+    width: 114px;
+    height: 35px;
+    background: #6f764d;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 109%;
+    text-align: center;
+    color: #fff;
 }
