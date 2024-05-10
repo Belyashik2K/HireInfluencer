@@ -88,13 +88,10 @@
 }
 
 .case_studies__text {
-    margin-left: 0px;
-    margin-right: 140px;
 }
 
 .case_studies__info {
     display: flex;
     height: 250px;
-    margin-left: 180px;
     margin-top: 0px;
 }
