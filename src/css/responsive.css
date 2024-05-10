@@ -155,4 +155,30 @@
         margin-left: 14px;
     }
 
+    .third_block__logo {
+        width: 255px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .third_block__text {
+        margin-top: 50px;
+    }
+
+    .third_block__title {
+        font-size: 27px;
+        white-space: pre-wrap;
+    }
+
+    .third_block__description {
+        font-size: 11px;
+        margin-bottom: 35px;
+    }
+
+    .third_block__partners {
+        flex-direction: column;
+        margin: auto;
+        gap: 40px;
+    }
+
 }
