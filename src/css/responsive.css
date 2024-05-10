@@ -238,4 +238,8 @@
         height: 100%;
         margin-bottom: 50px;
     }
+
+    .result {
+        margin-bottom: 20px;
+    }
 }
