@@ -243,4 +243,11 @@
     .result {
         margin-bottom: 20px;
     }
+
+    .header__burger_menu {
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        background-color: white;
+    }
 }
