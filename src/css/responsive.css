@@ -111,7 +111,7 @@
     .second_block__title {
         margin-top: 50px;
         text-align: center;
-        font-size: 24px;
+        font-size: 27px;
         margin-bottom: 10px;
     }
 
@@ -186,4 +186,56 @@
         margin-bottom: 50px;
     }
 
+    .advantages__preambula {
+        font-size: 14px;
+    }
+
+    .advantages__title {
+        margin-left: 0px;
+        font-size: 27px;
+    }
+
+    .advantages__description {
+        font-size: 12px;
+    }    
+
+    .loader {
+        width: 120px;
+    }
+
+    .influencers_photo, .result {
+        width: 100%;
+    }
+
+    .fourth_block {
+        flex-direction: column-reverse;
+    }
+    
+    .fourth_block__text {
+        margin-top: 0px;
+    }
+
+    .fifth_block {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+
+    .fifth_block__images {
+        gap: 35px;
+    }
+
+    .fifth_block__card {
+        width: 164.45px;
+        height: 254.8px;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .sixth_block{
+        flex-direction: column-reverse;
+        height: 100%;
+        margin-bottom: 50px;
+    }
 }
