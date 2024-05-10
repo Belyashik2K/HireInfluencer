@@ -184,7 +184,6 @@
         flex-direction: column;
         margin: auto;
         gap: 40px;
-        margin-bottom: 50px;
     }
 
     .advantages__preambula {
@@ -206,6 +205,11 @@
 
     .influencers_photo, .result {
         width: 100%;
+    }
+
+    .fourth_block__image {
+        margin-top: 35px;
+        margin-bottom: 20px;
     }
 
     .fourth_block {
