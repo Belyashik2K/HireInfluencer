@@ -1,7 +1,7 @@
 .case_studies {
     display: flex;
     flex-direction: column;
-    height: 600px;
+    height: 540px;
 }
 
 .case_studies__header {
