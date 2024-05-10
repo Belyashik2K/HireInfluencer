@@ -4,6 +4,10 @@
         display: none;
     }
 
+    .header {
+        margin-bottom: 40px;
+    }
+
     .header__nav__ul {
         transition: all 0.7s ease 0s;
         position: fixed;  
@@ -13,6 +17,8 @@
         flex-direction: column;
         gap: 10px;
         justify-content: center;
+        background-color: white;
+        background-size: 800px;
     }
 
     .header__nav__ul.active {
@@ -50,6 +56,40 @@
         margin-top: 0px;
         width: 100px;
         height: 20px;
+    }
+
+    .first_block {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .first_block__text {
+        margin-top: 0px;
+    }
+
+    .first_girl, .second_girl {
+        display: none;
+        width: 102px;
+        height: 129px;
+    }
+
+    #first_block__button_be_inf, #first_block__button_need_inf {
+        width: 120px;
+        height: 26px;
+        font-size: 13px;
+    }
+
+    .first_block__title {
+        font-size: 38px;
+        margin-bottom: 18px;
+    }
+
+    .first_block__logo {
+        margin-right: 7%;
+    }
+
+    .first_block__description {
+        font-size: 11px;
     }
 
 }
