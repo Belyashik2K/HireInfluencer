@@ -242,7 +242,7 @@
     .sixth_block{
         flex-direction: column-reverse;
         height: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 75px;
     }
 
     .result {
