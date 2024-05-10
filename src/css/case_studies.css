@@ -1,5 +1,7 @@
 .case_studies {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: 540px;
 }
@@ -55,15 +57,22 @@
     color: #6c6c6c;
 }
 
-.statistic {
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 120px 120px;
-    grid-gap: 0px 0px;
-    grid-template-areas: 
-        "statistic__title statistic__title statistic__title"
-        "statistic__description statistic__description statistic__description";
-    }
+.statistic-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.statistic__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    width: 100%;
+    margin: 40px 0px 40px 0px;
+}
 
 .case_studies__text_description {
     margin-top: 0px;
@@ -90,4 +99,8 @@
     display: flex;
     height: 250px;
     margin-top: 0px;
+}
+
+.case_studies__text {
+    margin-right: 120px;
 }
