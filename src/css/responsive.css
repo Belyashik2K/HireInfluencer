@@ -255,4 +255,53 @@
         box-shadow: none;
         background-color: white;
     }
+
+    .start_using_now {
+        height: auto;
+    }
+
+    .start_using_now__background {
+        height: 70px;
+    }
+
+    .empty_space {
+        height: 70px;
+        width: 0px;
+    }
+
+    #es_1 {
+        height: 70px;
+        width: 0px;
+    }
+
+    .man_with_rupor {
+        left: 1%;
+        width: 370px;
+    }
+
+    .start_using_now__icons {
+        width: 50%;
+        height: 70px;
+        gap: 10px;
+        margin-right: 8px;
+    }
+
+    .icon__description {
+        font-size: 7px;
+    }
+
+    #icon_3 {
+        width: 33.5px;
+        height: 23px;
+    }
+
+    #icon_2 {
+        width: 32px;
+        height: 26.5px;
+    }
+
+    #icon_1 {
+        width: 29px;
+        height: 29px;
+    }
 }
