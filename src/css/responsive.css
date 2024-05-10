@@ -11,7 +11,7 @@
     .header__nav__ul {
         transition: all 0.7s ease 0s;
         position: fixed;  
-        top: -100%;
+        top: -150%;
         left: 0;
         width: 100%;
         flex-direction: column;
