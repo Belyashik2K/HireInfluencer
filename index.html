@@ -24,27 +24,34 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/responsive.css">
     <script src="src/js/cards.js" defer></script>
+    <script src="src/js/burger.js" defer></script>
 </head>
 <body>
+
+    <header class="header">
+        <a href="#" class="logo_url">
+            <img class="logo" src="src/images/logo.png" alt="logo" class="header__logo">
+        </a>
+
+        <nav class="header__nav">
+            <ul class="header__nav__ul" id="header__nav">
+                <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Home</a></li>
+                <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">About</a></li>
+                <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Influencer</a></li>
+                <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Contact</a></li>
+                <button class="header__button" id="burger">Create account</button> 
+            </ul>
+        </nav>
+
+        <button class="header__button">Create account</button> 
+        <button class="header__burger_menu">
+            <img src="/src/images/burger.png" alt="burger_menu" class="burger_menu" id="burger_menu" onclick="openMenu()">
+        </button>
+
+    </header> 
+
     <div class="container">
 
-        <header class="header">
-            <a href="#" class="logo_url">
-                <img class="logo" src="src/images/logo.png" alt="logo" class="header__logo">
-            </a>
-
-            <nav class="header__nav">
-                <ul class="header__nav__ul">
-                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Home</a></li>
-                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">About</a></li>
-                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Influencer</a></li>
-                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Contact</a></li>
-                </ul>
-            </nav>
-
-            <button class="header__button">Create account</button>    
-
-        </header> 
 
         <div class="first_block">
 

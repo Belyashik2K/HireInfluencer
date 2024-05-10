@@ -12,6 +12,14 @@
   height: 27.22px;
 }
 
+.header__burger_menu {
+  display: none;
+}
+
+.header__button_burger {
+  display: none;
+}
+
 .header__link {
   font-family: var(--font-family);
   font-size: 18px;
@@ -22,6 +30,10 @@
   text-decoration: none;
   outline: none;
   box-shadow: none;
+}
+
+#burger {
+  display: none;
 }
 
 .header__button {

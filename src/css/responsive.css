@@ -1,6 +1,27 @@
-@media (max-width: 1080px) {
+@media (max-width: 420px) {
+
+    .container{
+        display: none;
+    }
+
     .header__nav__ul {
-        display: none;   
+        transition: all 0.3s ease 0s;
+        position: fixed;  
+        top: -100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .header__nav__ul.active {
+        top: 80px;
+        }
+
+    #burger {
+        display: block;
+        margin-left: auto;
     }
 
     .header__button {
@@ -9,7 +30,26 @@
 
     .logo_url {
         display: flex;
-        margin-left: 100px;
+        margin-left: 5%;
+    }
+
+    .header__burger_menu {
+        border: none;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        margin-right: 5%;
+    }
+
+    .burger_menu {
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo {
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
     }
 
 }
