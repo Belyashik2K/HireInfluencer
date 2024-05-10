@@ -161,6 +161,10 @@
         margin-bottom: 20px;
     }
 
+    .third_block {
+        height: auto;
+    }
+
     .third_block__text {
         margin-top: 50px;
     }
@@ -179,6 +183,7 @@
         flex-direction: column;
         margin: auto;
         gap: 40px;
+        margin-bottom: 50px;
     }
 
 }
