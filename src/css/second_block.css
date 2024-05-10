@@ -30,6 +30,7 @@
 .second_block__cards {
     display: flex;
     justify-content: center;
+    gap: 45px;
 }
 
 .second_block__card {
@@ -39,7 +40,6 @@
     height: 436px;
     border: white 4px solid;
     border-radius: 10px 10px 10px 10px; 
-    margin-right: 45px;
 }
 
 .second_block__card__title {
@@ -74,7 +74,6 @@
     height: 436px;
     border: white 4px solid;
     border-radius: 10px 10px 10px 10px; 
-    margin-right: 45px;
     background: white;
 }
 
