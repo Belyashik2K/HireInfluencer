@@ -1,0 +1,15 @@
+@media (max-width: 1080px) {
+    .header__nav__ul {
+        display: none;   
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .logo_url {
+        display: flex;
+        margin-left: 100px;
+    }
+
+}
