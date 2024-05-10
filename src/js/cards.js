@@ -150,8 +150,8 @@ info_for_cards = {
         },
         4: {
             "image": "/src/images/faces/11.png",
-            "title": "Alexandra Daddario",
-            "location": "New Mexico, USA",
+            "title": "Alexandra Kim",
+            "location": "Tallin, Estonia",
             "socials": {
                 1: {
                     "followers": "1.9M",
