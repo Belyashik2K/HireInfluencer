@@ -400,10 +400,12 @@
         outline: none;
         box-shadow: none;
         border: none;
+        background-color: white;
     }
 
     .influencers__menu {
         display: flex;
+        gap: 12px;
     }
 
     .hidden {
