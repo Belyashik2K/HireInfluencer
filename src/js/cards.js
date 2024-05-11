@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     firstCategory[0].classList.add("selected");
     updateCards("fb_cat");
 
-    if (window.innerWidth < 420) {
-        const ids = ["arrow_left", "arrow_right"];
-        ids.forEach(id => {
-            const button = document.getElementById(id);
-            button.addEventListener('click', move);
-        });
-    }
+    // if (window.innerWidth < 420) {
+    //     const ids = ["arrow_left", "arrow_right"];
+    //     ids.forEach(id => {
+    //         const button = document.getElementById(id);
+    //         button.addEventListener('click', move);
+    //     });
+    // }
 
 });
 
@@ -65,7 +65,7 @@ function updateCards(id) {
 
 // Кнопка нажимается 2 раза что делать
 
-function move() {
+function move(id) {
 
     const cardsContainer = document.querySelector('.influencers__cards');
     const cards = cardsContainer.querySelectorAll('.influencers__card');
@@ -75,7 +75,12 @@ function move() {
     const currentCard = document.querySelector('.active');
     // Get next card
     const nextCard = currentCard.id
-    const next = +nextCard + 1;
+    
+    if (id == "arrow_left") {
+        next = parseInt(nextCard) - 1;
+    } else {
+        next = parseInt(nextCard) + 1;
+    }
 
     categoryInfo = info_for_cards[CategoryName];
 
@@ -83,6 +88,12 @@ function move() {
         card.classList.remove("active");
         card.classList.add("hidden");
     });
+
+    if (next < 1) {
+        cards[Object.keys(categoryInfo).length - 1].classList.remove("hidden");
+        cards[Object.keys(categoryInfo).length - 1].classList.add("active");
+        return;
+    }
 
     if (next > Object.keys(categoryInfo).length) {
         cards[0].classList.remove("hidden");
