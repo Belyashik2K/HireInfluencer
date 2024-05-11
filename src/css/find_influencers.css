@@ -189,3 +189,7 @@ a img {
     text-align: center;
     color: #fff;
 }
+
+#arrow_left, #arrow_right {
+    display: none;
+}

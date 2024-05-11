@@ -367,6 +367,7 @@
     .influencers__header {
         flex-direction: column;
         margin: auto;
+        margin-bottom: 20px;
     }
 
     .influencers__buttons {
@@ -393,4 +394,19 @@
         flex-direction: column;
     }
 
+    #arrow_left, #arrow_right {
+        display: block;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .influencers__menu {
+        display: flex;
+    }
+
+    .hidden {
+        display: none;
+    }
 }
