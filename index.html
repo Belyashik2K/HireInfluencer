@@ -22,254 +22,264 @@
     <link rel="stylesheet" href="src/css/first_block.css">
     <link rel="stylesheet" href="src/css/header.css">
     <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
     <script src="src/js/cards.js" defer></script>
+    <script src="src/js/burger.js" defer></script>
 </head>
 <body>
-    <div class="container">
 
-        <header class="header">
-            <a href="#">
-                <img class="logo" src="src/images/logo.png" alt="logo" class="header__logo">
-            </a>
+    <header class="header">
+        <a href="#" class="logo_url">
+            <img class="logo" src="src/images/logo.png" alt="logo" class="header__logo">
+        </a>
 
-            <nav class="header__nav">
-                <ul class="header__nav__ul">
-                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Home</a></li>
-                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">About</a></li>
-                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Influencer</a></li>
-                    <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Contact</a></li>
-                </ul>
+        <nav class="header__nav">
+            <ul class="header__nav__ul" id="header__nav">
+                <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Home</a></li>
+                <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">About</a></li>
+                <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Influencer</a></li>
+                <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Contact</a></li>
+                <button class="header__button" id="burger">Create account</button> 
+            </ul>
+        </nav>
+
+        <button class="header__button">Create account</button> 
+        <button class="header__burger_menu">
+            <img src="/src/images/burger.png" alt="burger_menu" class="burger_menu" id="burger_menu" onclick="openMenu()">
+        </button>
+
+    </header> 
+
+    <div class="first_block">
+
+        <img src="/src/images/first_girl.png" alt="first_girl" class="first_girl">
+        
+        <div class="first_block__text">
+            <img src="/src/images/stars.png" alt="logo" class="first_block__logo">
+            <h1 class="first_block__title">Hire <a class="green">influencer</a> <br> in a seconds</h1>
+            <p class="first_block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi <br> vulputate nec amet purus mauris nibh. Neque, dictum urna</p>
+
+            <nav class="first_bloсk__buttons">
+                <button class="first_block__button" id="first_block__button_need_inf">I need influencer</button>
+                <button class="first_block__button" id="first_block__button_be_inf">I am influencer</button>    
             </nav>
+        </div>
+        
+        <img src="/src/images/second_girl.png" alt="second_girl" class="second_girl">
 
-            <button class="header__button">Create account</button>    
+    </div>
 
-        </header> 
+    <div class="second_block__background">
 
-        <div class="first_block">
-
-            <img src="/src/images/first_girl.png" alt="first_girl" class="first_girl">
-            
-            <div class="first_block__text">
-                <img src="/src/images/stars.png" alt="logo" class="first_block__logo">
-                <h1 class="first_block__title">Hire <a class="green">influencer</a> <br> in a seconds</h1>
-                <p class="first_block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi <br> vulputate nec amet purus mauris nibh. Neque, dictum urna</p>
-
-                <nav class="first_bloсk__buttons">
-                    <button class="first_block__button" id="first_block__button_need_inf">I need influencer</button>
-                    <button class="first_block__button" id="first_block__button_be_inf">I am influencer</button>    
-                </nav>
-            </div>
-            
-            <img src="/src/images/second_girl.png" alt="second_girl" class="second_girl">
-
+        <div class="second_block__text">
+            <h1 class="second_block__title">The way you <br> feel comportable</h1>
+            <p class="second_block__description">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Tempor morbi vulputate nec amet purus</p>
         </div>
 
-        <div class="second_block__background">
+        <div class="second_block__cards">
 
-            <div class="second_block__text">
-                <h1 class="second_block__title">The way you <br> feel comportable</h1>
-                <p class="second_block__description">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Tempor morbi vulputate nec amet purus</p>
+            <div class="second_block__card">
+                <img src="/src/images/lupa.png" alt="second_block_1" class="second_block__card__image">
+                <h2 class="second_block__card__title">Simply do it <br> by yourself</h2>
+                <p class="second_block__card__description">With a large database of influencers at your disposal, find those who match your own criteria, set up and manage campaigns and get the results you want for your business, no matter the size.</p>
+                <img src="/src/images/white_arrow.png" alt="white_arrow" class="arrow">
             </div>
 
-            <div class="second_block__cards">
+            <div class="second_block__card_edited">
+                <img src="/src/images/settings.png" alt="second_block_2" class="second_block__card__image">
+                <h2 class="second_block__card__title_edited" id="second_block__card__title_position">Let us handle <br> it for you </h2>
+                <p class="second_block__card__description_edited">You set the objectives, and we handle your campaigns from A to Z. Let the team of industry experts bring your objectives to life through high-quality campaigns with guaranteed ROI.</p>
+                <img src="/src/images/black_arrow.png" alt="black_arrow" class="arrow">
+            </div>
 
-                <div class="second_block__card">
-                    <img src="/src/images/lupa.png" alt="second_block_1" class="second_block__card__image">
-                    <h2 class="second_block__card__title">Simply do it <br> by yourself</h2>
-                    <p class="second_block__card__description">With a large database of influencers at your disposal, find those who match your own criteria, set up and manage campaigns and get the results you want for your business, no matter the size.</p>
-                    <img src="/src/images/white_arrow.png" alt="white_arrow" class="arrow">
+        </div>
+    </div>
+
+    <div class="third_block">
+
+        <div class="third_block__text">
+            <img src="/src/images/stars_2.png" alt="logo" class="third_block__logo">
+            <h1 class="third_block__title">The best are already here</h1>
+            <p class="third_block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi <br> vulputate nec amet purus mauris nibh. Neque, dictum urna </p>
+        </div>
+        
+        <div class="third_block__partners">
+            <img src="/src/images/partners/1.png" alt="partner_1" class="partner">
+            <img src="/src/images/partners/2.png" alt="partner_2" class="partner">
+            <img src="/src/images/partners/5.png" alt="partner_3" class="partner">
+            <img src="/src/images/partners/3.png" alt="partner_4" class="partner">
+            <img src="/src/images/partners/4.png" alt="partner_5" class="partner">
+        </div>
+
+    </div>
+
+    <div class="fourth_block">
+
+        <div class="fourth_block__text">
+            <p class="advantages__preambula">Search for influencer</p>
+            <h1 class="advantages__title">More then 6570 <br> influencer waiting <br> your offer</h1>
+            <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Tempor morbi vulputate nec amet purus mauris nibh. <br> Neque, dictum urna</p>
+            <img src="/src/images/loaders/1.png" alt="loader" class="loader">
+        </div>
+
+        <div class="fourth_block__image">
+            <img src="/src/images/influencers.png" alt="influencers" class="influencers_photo">
+        </div> 
+
+    </div>
+
+    <div class="fifth_block">
+            
+        <div class="fifth_block__images">
+            <img src="/src/images/cards/1.png" alt="card_1" class="fifth_block__card">
+            <img src="/src/images/cards/2.png" alt="card_2" class="fifth_block__card" id="card_2">
+        </div>  
+
+        <div id="right" class="fifth_block__text">
+            <p class="advantages__preambula">Start Dealing</p>
+            <h1 class="advantages__title">Make a proposal <br> or choose an offer</h1>
+            <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Tempor morbi vulputate nec amet purus mauris nibh. <br> Neque, dictum urna</p>
+            <img src="/src/images/loaders/2.png" alt="loader" class="loader">
+        </div>
+
+    </div>
+
+    <div class="sixth_block">
+
+        <div class="sixth_block__text">
+            <p class="advantages__preambula">See the result</p>
+            <h1 class="advantages__title">Enjoy the different!</h1>
+            <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Tempor morbi vulputate nec amet purus mauris nibh. <br> Neque, dictum urna</p>
+            <img src="/src/images/loaders/3.png" alt="loader" class="loader">
+        </div>
+
+        <div class="sixth_block__image">
+            <img src="/src/images/diagram.png" alt="result" class="result">
+        </div>
+
+    </div>
+
+    <div class="start_using_now">
+
+        <div class="empty_space"></div>
+
+        <div class="start_using_now__background">
+
+            <img src="/src/images/ne_ori_pz.png" alt="man_with_rupor" class="man_with_rupor"></img>
+        
+            <div class="empty_space" id="es_1"></div>
+
+            <div class="start_using_now__icons">
+
+                <div class="start_using_now__icon">
+                    <img src="/src/images/icons/1.png" alt="icon_1" class="start_using_now__icon_img" id="icon_1">
+                    <p class="icon__description">Shoutout & <br> Promotion</p>
                 </div>
 
-                <div class="second_block__card_edited">
-                    <img src="/src/images/settings.png" alt="second_block_2" class="second_block__card__image">
-                    <h2 class="second_block__card__title_edited" id="second_block__card__title_position">Let us handle <br> it for you </h2>
-                    <p class="second_block__card__description_edited">You set the objectives, and we handle your campaigns from A to Z. Let the team of industry experts bring your objectives to life through high-quality campaigns with guaranteed ROI.</p>
-                    <img src="/src/images/black_arrow.png" alt="black_arrow" class="arrow">
+                <div class="start_using_now__icon">
+                    <img src="/src/images/icons/2.png" alt="icon_2" class="start_using_now__icon_img" id="icon_2">
+                    <p class="icon__description">Statagy & <br> Research</p>
+                </div>
+
+                <div class="start_using_now__icon">
+                    <img src="/src/images/icons/3.png" alt="icon_3" class="start_using_now__icon_img" id="icon_3">
+                    <p class="icon__description">Long-Term <br> Collabiration</p>
                 </div>
 
             </div>
+
         </div>
-
-        <div class="third_block">
-
-            <div class="third_block__text">
-                <img src="/src/images/stars_2.png" alt="logo" class="third_block__logo">
-                <h1 class="third_block__title">The best are already here</h1>
-                <p class="third_block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi <br> vulputate nec amet purus mauris nibh. Neque, dictum urna </p>
-            </div>
             
-            <div class="third_block__partners">
-                <img src="/src/images/partners/1.png" alt="partner_1" class="partner">
-                <img src="/src/images/partners/2.png" alt="partner_2" class="partner">
-                <img src="/src/images/partners/5.png" alt="partner_3" class="partner">
-                <img src="/src/images/partners/3.png" alt="partner_4" class="partner">
-                <img src="/src/images/partners/4.png" alt="partner_5" class="partner">
-            </div>
-
-        </div>
-
-        <div class="fourth_block">
-
-            <div class="fourth_block__text">
-                <p class="advantages__preambula">Search for influencer</p>
-                <h1 class="advantages__title">More then 6570 <br> influencer waiting <br> your offer</h1>
-                <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Tempor morbi vulputate nec amet purus mauris nibh. <br> Neque, dictum urna</p>
-                <img src="/src/images/loaders/1.png" alt="loader" class="loader">
-            </div>
-
-            <div class="fourth_block__image">
-                <img src="/src/images/influencers.png" alt="influencers" class="influencers_photo">
-            </div> 
-
-        </div>
-
-        <div class="fifth_block">
-            
-            <div class="fifth_block__images">
-                <img src="/src/images/cards/1.png" alt="card_1" class="fifth_block__card">
-                <img src="/src/images/cards/2.png" alt="card_2" class="fifth_block__card" id="card_2">
-            </div>  
-
-            <div id="right" class="fifth_block__text">
-                <p class="advantages__preambula">Start Dealing</p>
-                <h1 class="advantages__title">Make a proposal <br> or choose an offer</h1>
-                <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Tempor morbi vulputate nec amet purus mauris nibh. <br> Neque, dictum urna</p>
-                <img src="/src/images/loaders/2.png" alt="loader" class="loader">
-            </div>
-
-        </div>
-
-        <div class="sixth_block">
-
-            <div class="sixth_block__text">
-                <p class="advantages__preambula">See the result</p>
-                <h1 class="advantages__title">Enjoy the different!</h1>
-                <p class="advantages__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Tempor morbi vulputate nec amet purus mauris nibh. <br> Neque, dictum urna</p>
-                <img src="/src/images/loaders/3.png" alt="loader" class="loader">
-            </div>
-
-            <div class="sixth_block__image">
-                <img src="/src/images/diagram.png" alt="result" class="result">
-            </div>
-
-        </div>
-
-        <div class="start_using_now">
-
-            <div class="empty_space"></div>
-
-            <div class="start_using_now__background">
-
-                <img src="/src/images/ne_ori_pz.png" alt="man_with_rupor" class="man_with_rupor"></img>
-            
-                <div class="empty_space" id="es_1"></div>
-
-                <div class="start_using_now__icons">
-
-                    <div class="start_using_now__icon">
-                        <img src="/src/images/icons/1.png" alt="icon_1" class="start_using_now__icon_img" id="icon_1">
-                        <p class="icon__description">Shoutout & <br> Promotion</p>
-                    </div>
+    </div>
     
-                    <div class="start_using_now__icon">
-                        <img src="/src/images/icons/2.png" alt="icon_2" class="start_using_now__icon_img" id="icon_2">
-                        <p class="icon__description">Statagy & <br> Research</p>
-                    </div>
-    
-                    <div class="start_using_now__icon">
-                        <img src="/src/images/icons/3.png" alt="icon_3" class="start_using_now__icon_img" id="icon_3">
-                        <p class="icon__description">Long-Term <br> Collabiration</p>
-                    </div>
-
-                </div>
-    
-            </div>
+    <div class="case_studies">
                 
+        <div class="case_studies__header">
+            <h1 class="case_studies__title">Case studies</h1>
+            <p class="case_studies__additional_info">24 Projects Completed <img class ="case_studies__arrow" src="/src/images/green_arrow.png" alt="arrow"> </p>
         </div>
 
-        <div class="case_studies">
-                
-                <div class="case_studies__header">
-                    <h1 class="case_studies__title">Case studies</h1>
-                    <p class="case_studies__additional_info">24 Projects Completed <img class ="case_studies__arrow" src="/src/images/green_arrow.png" alt="arrow"> </p>
-                </div>
+        <div class="case_studies__info">
 
-                <div class="case_studies__info">
+            <div class="case_studies__text">
+                <img class="canon_gray" src="/src/images/partners/1.png" alt="partner_1" id="grayscale">
+                <p class="case_studies__text_description">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Tempor morbi vulputate nec <br> amet purus mauris nibh. Neque, dictum urna</p>
+                <p class="case_studies__text_name">Tareq Azia. Marketing Manager. Canon</p>
+            </div>
 
-                    <div class="case_studies__text">
-                        <img class="canon_gray" src="/src/images/partners/1.png" alt="partner_1" id="grayscale">
-                        <p class="case_studies__text_description">Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Tempor morbi vulputate nec <br> amet purus mauris nibh. Neque, dictum urna</p>
-                        <p class="case_studies__text_name">Tareq Azia. Marketing Manager. Canon</p>
+            <div class="statistic-container">
+
+                <div class="statistic__row" id="statistic__row1">
+                    <div id="statistic_1" class="statistic__block">
+                        <h1 class="statistic__title">9</h1>
+                        <p class="statistic__description">Instagram Post</p>
                     </div>
 
-                    <div class="statistic-container">
+                    <div id="statistic_2" class="statistic__block">
+                        <h1 class="statistic__title">4</h1>
+                        <p class="statistic__description">Instagram Stories</p>
+                    </div>
 
-                        <div class="statistic__row" id="statistic__row1">
-                            <div id="statistic_1" class="statistic__block">
-                                <h1 class="statistic__title">9</h1>
-                                <p class="statistic__description">Instagram Post</p>
-                            </div>
-
-                            <div id="statistic_2" class="statistic__block">
-                                <h1 class="statistic__title">4</h1>
-                                <p class="statistic__description">Instagram Stories</p>
-                            </div>
-
-                            <div id="statistic_3" class="statistic__block">
-                                <h1 class="statistic__title">2156</h1>
-                                <p class="statistic__description">Direct Message</p>
-                            </div>
-                        </div>
-
-                        <div class="statistic__row" id="statistic__row2">
-                            
-                            <div id="statistic_4" class="statistic__block">
-                                <h1 class="statistic__title">8123</h1>
-                                <p class="statistic__description">New Followers</p>
-                            </div>
-
-                            <div id="statistic_5" class="statistic__block">
-                                <h1 class="statistic__title">10,789</h1>
-                                <p class="statistic__description">New Likes</p>
-                            </div>
-
-                            <div id="statistic_6" class="statistic__block">
-                                <h1 class="statistic__title">1500</h1>
-                                <p class="statistic__description">Lead Generated</p>
-                            </div>
-                        
-                        </div>
-
+                    <div id="statistic_3" class="statistic__block">
+                        <h1 class="statistic__title">2156</h1>
+                        <p class="statistic__description">Direct Message</p>
                     </div>
                 </div>
+
+                <div class="statistic__row" id="statistic__row2">
+                    
+                    <div id="statistic_4" class="statistic__block">
+                        <h1 class="statistic__title">8123</h1>
+                        <p class="statistic__description">New Followers</p>
+                    </div>
+
+                    <div id="statistic_5" class="statistic__block">
+                        <h1 class="statistic__title">10,789</h1>
+                        <p class="statistic__description">New Likes</p>
+                    </div>
+
+                    <div id="statistic_6" class="statistic__block">
+                        <h1 class="statistic__title">1500</h1>
+                        <p class="statistic__description">Lead Generated</p>
+                    </div>
                 
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="influencers">
+
+        <div class="influencers__header">
+
+            <h1 class="influencers__title">Find influencers <br> in seconds</h1>
+
+            <div class="influencers__buttons">
+                <button class="influencers__social" id="fb_cat" onclick="updateCards(this.id)">Facebook</button>
+                <button class="influencers__social" id="inst_cat" onclick="updateCards(this.id)">Instagram</button>
+                <button class="influencers__social" id="tw_cat" onclick="updateCards(this.id)">Twitter</button>
+                <button class="influencers__social" id="tt_cat" onclick="updateCards(this.id)">Tiktok</button>    
+            </div>
+            
         </div>
 
-        <div class="influencers">
-
-            <div class="influencers__header">
-
-                <h1 class="influencers__title">Find influencers <br> in seconds</h1>
-
-                <div class="influencers__buttons">
-                    <button class="influencers__social" id="fb_cat" onclick="updateCards(this.id)">Facebook</button>
-                    <button class="influencers__social" id="inst_cat" onclick="updateCards(this.id)">Instagram</button>
-                    <button class="influencers__social" id="tw_cat" onclick="updateCards(this.id)">Twitter</button>
-                    <button class="influencers__social" id="tt_cat" onclick="updateCards(this.id)">Tiktok</button>    
-                </div>
-                
-            </div>
+        <div class="influencers__menu">
+            <button id="arrow_left" onclick="move(this.id)">
+                <img src="/src/images/arrow-left.png" alt="arrow" id="arrow_left_png">
+            </button>
 
             <div class="influencers__cards">
 
                 <div class="influencers__card">
                     
                     <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
-
+    
                     <h2 class="influencers__card__title"></h2>
                     <p class="influencers__card__location"></p>
                     <img src="/src/images/stars_3.png" alt="stars" class="influencers__card__stars">
-
+    
                     <div class="influencers__card__buttons">
                         <a class="facebook-like-button" id="socials_buttons">
                             <span class="icon">
@@ -285,15 +295,15 @@
                         </a>
                     </div>    
                 </div>
-
+    
                 <div class="influencers__card">
                     
                     <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
-
+    
                     <h2 class="influencers__card__title"></h2>
                     <p class="influencers__card__location"></p>
                     <img src="/src/images/stars_3.png" alt="stars" class="influencers__card__stars">
-
+    
                     <div class="influencers__card__buttons">
                         <a class="facebook-like-button" id="socials_buttons">
                             <span class="icon">
@@ -309,15 +319,15 @@
                         </a>
                     </div>    
                 </div>
-
+    
                 <div class="influencers__card">
                     
                     <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
-
+    
                     <h2 class="influencers__card__title"></h2>
                     <p class="influencers__card__location"></p>
                     <img src="/src/images/stars_3.png" alt="stars" class="influencers__card__stars">
-
+    
                     <div class="influencers__card__buttons">
                         <a class="facebook-like-button" id="socials_buttons">
                             <span class="icon">
@@ -333,15 +343,15 @@
                         </a>
                     </div>    
                 </div>
-
+    
                 <div class="influencers__card">
                     
                     <img src="/src/images/round.png" alt="influencer_1" class="influencers__card__image">
-
+    
                     <h2 class="influencers__card__title"></h2>
                     <p class="influencers__card__location"></p>
                     <img src="/src/images/stars_3.png" alt="stars" class="influencers__card__stars">
-
+    
                     <div class="influencers__card__buttons">
                         <a class="facebook-like-button" id="socials_buttons">
                             <span class="icon">
@@ -357,30 +367,37 @@
                         </a>
                     </div>    
                 </div>
-
+    
             </div>
 
-        </div>
-        
-        <div class="free_trial">
-            <div class="free_trial__background">
-                <div class="free_trial_registration">
-                    <div class="free_trial__header">
-                        <h1 class="free_trial__title">Start a free trial</h1>
-                        <p class="free_trial__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi <br> vulputate nec amet purus mauris nibh. Neque, dictum urna</p>
-                        <button class="free_trial__button">Create free account</button>
-                    </div>
-                </div>    
-            </div>
+            <button id="arrow_right" onclick="move(this.id)">
+                <img src="/src/images/arrow-right.png" alt="arrow" id="arrow_right_png">
+            </button>
+    
         </div>
 
-        <footer class="footer">
+    </div>
 
-            <div class="footer__description">
-                <h1 class="footer__title">Saimon</h1>
-                <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Tempor morbi vulputate nec amet purus mauris nibh. <br> Neque, dictum urna</p>
-            </div>
+    <div class="free_trial">
+        <div class="free_trial__background">
+            <div class="free_trial_registration">
+                <div class="free_trial__header">
+                    <h1 class="free_trial__title">Start a free trial</h1>
+                    <p class="free_trial__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi <br> vulputate nec amet purus mauris nibh. Neque, dictum urna</p>
+                    <button class="free_trial__button">Create free account</button>
+                </div>
+            </div>    
+        </div>
+    </div>
 
+    <footer class="footer">
+
+        <div class="footer__description">
+            <h1 class="footer__title">Saimon</h1>
+            <p class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Tempor morbi vulputate nec amet purus mauris nibh. <br> Neque, dictum urna</p>
+        </div>
+
+        <div class="footer__links">
             <div class="footer__search">
                 <p class="footer__preambula">Search</p>
                 <nav class="footer__search_nav">
@@ -394,7 +411,7 @@
                     </ul>                    
                 </nav>
             </div>
-
+    
             <div class="footer__information">
                 <p class="footer__preambula">Information</p>
                 <nav class="footer__information_nav">
@@ -406,7 +423,10 @@
                     </ul>
                 </nav>
             </div>
-        </footer>
-    </div>
+    
+        </div>
+            
+
+    </footer>
 </body>
 </html>

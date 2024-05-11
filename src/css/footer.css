@@ -34,7 +34,7 @@
 }
 
 .footer__search {
-    margin-top: 80px;
+    margin-top: 56px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@
 }
 
 .footer__information {
-    margin-top: 80px;
+    margin-top: 56px;
     display: flex;
     flex-direction: column;
 }
@@ -80,5 +80,10 @@
     font-size: 18px;
     color: #fff;
     margin-bottom: 38px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 130px;
 }
 

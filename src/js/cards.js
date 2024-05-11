@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const firstCategory = document.querySelector('.influencers__buttons').querySelectorAll('.influencers__social')
     firstCategory[0].classList.add("selected");
     updateCards("fb_cat");
+
+    // if (window.innerWidth < 420) {
+    //     const ids = ["arrow_left", "arrow_right"];
+    //     ids.forEach(id => {
+    //         const button = document.getElementById(id);
+    //         button.addEventListener('click', move);
+    //     });
+    // }
+
 });
 
 function updateCards(id) { 
@@ -21,6 +30,20 @@ function updateCards(id) {
     counter = 0;
     cards.forEach(card => {
         counter += 1;
+
+        // Если с телефона, то оставляем только одну карточку
+        if (window.innerWidth < 420) {
+            card.id = counter;
+        
+            card.classList.remove("hidden");
+
+            if (counter > 1) {
+                card.classList.add("hidden");
+            } else {
+                card.classList.add("active");
+            }
+        }
+
         const cardImage = card.querySelector('.influencers__card__image');
         const cardTitle = card.querySelector('.influencers__card__title');
         const cardLocation = card.querySelector('.influencers__card__location');
@@ -38,6 +61,47 @@ function updateCards(id) {
             Followers.textContent = info_for_cards[socialMedia][counter]["socials"][second_counter]["followers"];
         });
     });
+}
+
+// Кнопка нажимается 2 раза что делать
+
+function move(id) {
+
+    const cardsContainer = document.querySelector('.influencers__cards');
+    const cards = cardsContainer.querySelectorAll('.influencers__card');
+    const CategoryName = document.getElementsByClassName("selected")[0].textContent;
+    
+    // Get current card
+    const currentCard = document.querySelector('.active');
+    // Get next card
+    const nextCard = currentCard.id
+    
+    if (id == "arrow_left") {
+        next = parseInt(nextCard) - 1;
+    } else {
+        next = parseInt(nextCard) + 1;
+    }
+
+    categoryInfo = info_for_cards[CategoryName];
+
+    cards.forEach(card => {
+        card.classList.remove("active");
+        card.classList.add("hidden");
+    });
+
+    if (next < 1) {
+        cards[Object.keys(categoryInfo).length - 1].classList.remove("hidden");
+        cards[Object.keys(categoryInfo).length - 1].classList.add("active");
+        return;
+    }
+
+    if (next > Object.keys(categoryInfo).length) {
+        cards[0].classList.remove("hidden");
+        cards[0].classList.add("active");
+    } else {
+        cards[next - 1].classList.remove("hidden");
+        cards[next - 1].classList.add("active");
+    }
 }
 
 info_for_cards = {
@@ -166,16 +230,16 @@ info_for_cards = {
     "Twitter": {
         1: {
             "image": "/src/images/faces/12.png",
-            "title": "Valery Kharlamov",
-            "location": "Nurnberg, Germany",
+            "title": "Bogdan Chebotarev",
+            "location": "Basement, Russia",
             "socials": {
                 1: {
-                    "followers": "17K",
-                    "url": "https://www.facebook.com/valerykharlamov",
+                    "followers": "6.29M",
+                    "url": "https://www.facebook.com/bogdanchebotarev",
                 },
                 2: {
-                    "followers": "1.68M",
-                    "url": "https://www.instagram.com/valerykharlamov",
+                    "followers": "5.95M",
+                    "url": "https://www.instagram.com/bogdanchebotarev",
                 },
             },
         },

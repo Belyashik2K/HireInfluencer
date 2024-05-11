@@ -17,8 +17,6 @@
 }
 
 .influencers__social:hover {
-    width: 114px;
-    height: 35px;
     background: #6f764d;
     font-family: var(--font-family);
     font-weight: 400;
@@ -183,8 +181,6 @@ a img {
 }
 
 .selected {
-    width: 114px;
-    height: 35px;
     background: #6f764d;
     font-family: var(--font-family);
     font-weight: 400;
@@ -192,4 +188,8 @@ a img {
     line-height: 109%;
     text-align: center;
     color: #fff;
+}
+
+#arrow_left, #arrow_right {
+    display: none;
 }
