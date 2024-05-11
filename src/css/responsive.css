@@ -420,6 +420,7 @@
         background: #6f764d;
         width: 100%;
         height: auto;
+        border-radius: 0px 0px;
     }
 
     .free_trial__title {
