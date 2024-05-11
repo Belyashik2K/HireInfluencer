@@ -411,4 +411,32 @@
     .hidden {
         display: none;
     }
+
+    .free_trial__background {
+        width: 100%;
+    }
+
+    .free_trial_registration {
+        background: #6f764d;
+        width: 100%;
+        height: auto;
+    }
+
+    .free_trial__title {
+        font-size: 27px;
+        margin-top: 60px;
+    }
+
+    .free_trial__description {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+    .free_trial__button {
+        width: 150px;
+        height: 40px;
+        font-size: 12px;
+        margin-bottom: 50px;
+    }
+
 }
