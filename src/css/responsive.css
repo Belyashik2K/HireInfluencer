@@ -478,3 +478,36 @@
         margin-top: 40px;
     }
 }
+
+@media only screen and (min-width: 420px) and (max-width: 1279px) {
+
+    body {
+        display: none;
+    }
+
+    html {
+        display: block;
+        position:fixed;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        background:#fff;
+        z-index:999;
+        text-align:center;
+        width:80%;
+        height:100px;
+        font-size:20px;
+        line-height:100px;
+    }
+
+    html::before {
+        display: block; 
+        content: "Please, rotate your device or use a larger screen to view this content.";
+        font-family: var(--third-family);
+        color: #6f764d;
+        line-height: 1;
+    }
+
+}
