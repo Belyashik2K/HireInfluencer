@@ -412,8 +412,13 @@
         display: none;
     }
 
+    .free_trial {
+        margin-bottom: 60px;
+    }
+
     .free_trial__background {
         width: 100%;
+        height: auto;
     }
 
     .free_trial_registration {
@@ -440,4 +445,36 @@
         margin-bottom: 50px;
     }
 
+    .footer {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .footer__links {
+        display: flex;
+        gap: 70px;
+    }
+
+    .footer__preambula {
+        font-size: 16px;
+        margin-bottom: 10px;
+
+    }
+
+    .footer__link {
+        font-size: 12px;
+    }
+
+    .footer__title {
+        font-size: 27px;
+        margin-bottom: 25px;
+    }
+
+    .footer__text {
+        display: none;
+    }
+
+    .footer__description {
+        margin-top: 40px;
+    }
 }
