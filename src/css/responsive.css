@@ -390,7 +390,6 @@
     }
 
     .influencers__cards {
-        display: none;
         flex-direction: column;
     }
 

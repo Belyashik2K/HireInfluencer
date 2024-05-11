@@ -166,16 +166,16 @@ info_for_cards = {
     "Twitter": {
         1: {
             "image": "/src/images/faces/12.png",
-            "title": "Valery Kharlamov",
-            "location": "Nurnberg, Germany",
+            "title": "Bogdan Chebotarev",
+            "location": "Basement, Russia",
             "socials": {
                 1: {
-                    "followers": "17K",
-                    "url": "https://www.facebook.com/valerykharlamov",
+                    "followers": "6.29M",
+                    "url": "https://www.facebook.com/bogdanchebotarev",
                 },
                 2: {
-                    "followers": "1.68M",
-                    "url": "https://www.instagram.com/valerykharlamov",
+                    "followers": "5.95M",
+                    "url": "https://www.instagram.com/bogdanchebotarev",
                 },
             },
         },
