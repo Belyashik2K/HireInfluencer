@@ -25,7 +25,7 @@
 .second_block__cards {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 45px;
     margin-left: 0px;
 }
 
