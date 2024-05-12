@@ -326,7 +326,7 @@ info_for_cards = {
                 },
             },
         },
-        3: {
+        4: {
             "image": "/src/images/faces/19.png",
             "title": "Vladimir Koshevoi",
             "location": "Riga, Latvia",
@@ -356,18 +356,18 @@ info_for_cards = {
                 },
             },
         },
-        4: {
+        3: {
             "image": "/src/images/faces/18.png",
-            "title": "Omar Sy",
-            "location": "Paris, France",
+            "title": "Sergey Kolchenko",
+            "location": "Lausanne, Switzerland",
             "socials": {
                 1: {
-                    "followers": "567K",
-                    "url": "https://www.facebook.com/omarsy",
+                    "followers": "71M",
+                    "url": "https://www.facebook.com/seregacpluplus",
                 },
                 2: {
-                    "followers": "334K",
-                    "url": "https://www.instagram.com/omarsy",
+                    "followers": "19M",
+                    "url": "https://www.instagram.com/seregacpluplus",
                 },
             },
         },
