@@ -214,6 +214,7 @@
 
     .fourth_block {
         flex-direction: column-reverse;
+        gap: 0px;
     }
     
     .fourth_block__text {
@@ -222,9 +223,14 @@
     }
 
     .fifth_block {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 0px;
         height: 100%;
         margin-bottom: 50px;
+    }
+
+    .fifth_block__text {
+        margin-right: auto;
     }
 
     .fifth_block__images {
@@ -243,6 +249,7 @@
         flex-direction: column-reverse;
         height: 100%;
         margin-bottom: 75px;
+        gap: 0px
     }
 
     .result {
@@ -477,6 +484,11 @@
     .footer__description {
         margin-top: 40px;
     }
+
+    .block-container{
+        display: block;
+    }
+
 }
 
 @media only screen and (min-width: 420px) and (max-width: 1279px) {
@@ -509,5 +521,4 @@
         color: #6f764d;
         line-height: 1;
     }
-
 }

@@ -1,6 +1,7 @@
 .fourth_block {
     display: flex;
     height: 520px;
+    gap: 120px;
 }
 
 .advantages__preambula {
@@ -46,4 +47,10 @@
 .loader {
     margin-top: 0px;
     margin-left: 0px;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

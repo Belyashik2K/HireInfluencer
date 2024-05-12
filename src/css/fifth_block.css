@@ -1,12 +1,14 @@
 .fifth_block {
     display: flex;
+    flex-direction: row-reverse;
     height: 520px;
+    gap:120px
 }
 
 .fifth_block__text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-right: 125px;
 }
 
 .fifth_block__images {
