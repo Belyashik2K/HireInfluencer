@@ -379,8 +379,13 @@
         margin-bottom: 8px;
     }
 
+    .statistic__block {
+        margin: 0;
+    }
+
     .case_studies__additional_info {
         font-size: 16px;
+        margin-left: auto;
     }
 
     .case_studies__arrow {
