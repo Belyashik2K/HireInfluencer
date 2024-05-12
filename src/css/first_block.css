@@ -11,6 +11,8 @@
 .first_block__text {
     display: flex;
     flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .first_block__title {
@@ -89,4 +91,12 @@
 .first_block__button {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.first_girl {
+    margin-right: 60px;
+}
+
+.second_girl {
+    margin-left: 55px;
 }

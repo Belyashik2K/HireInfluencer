@@ -102,11 +102,13 @@
 
     .second_block__cards {
         flex-direction: column;
+        margin: auto;
     }
 
     .second_block__background {
         height: 100%;
         flex-direction: column;
+        gap: 0px;
     }
 
     .second_block__title {
@@ -158,6 +160,10 @@
         margin-bottom: 20px;
     }
 
+    .second_block__text {
+        margin: auto;
+    }
+
     .third_block__logo {
         width: 255px;
         margin-top: 15px;
@@ -185,7 +191,31 @@
     .third_block__partners {
         flex-direction: column;
         margin: auto;
-        gap: 40px;
+        gap: 20px;
+    }
+
+    .partner__row {
+        gap:30px
+    }
+
+    #p1 {
+        width: 104.3px;
+    }
+
+    #p2 {
+        width: 112px;
+    }
+
+    #p3 {
+        width: 58.1px;
+    }
+
+    #p4 {
+        width: 128.1px;
+    }
+
+    #p5 {
+        width: 82.6px;
     }
 
     .advantages__preambula {
