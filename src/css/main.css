@@ -35,3 +35,7 @@ a {
 .no_album_orientation {
     display: none;
 }
+
+.swiper {
+    display: none;
+}

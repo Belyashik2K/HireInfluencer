@@ -127,10 +127,32 @@
     .second_block__card, .second_block__card_edited {
         width: 230px;
         height: 327px;
+        position: relative;
     }
 
-    .second_block__card_edited {
-        margin-bottom: 50px;
+    .swiper {
+        display: block;
+    }
+
+    
+    .round_swiper {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%; /* Сделать кнопку круглой */
+        border: 1px solid black; /* Добавить черную окантовку */
+        cursor: pointer; /* Указать курсор в виде руки при наведении */
+        transition: background-color 0.3s;
+        margin-bottom: 35px;
+    }
+
+    .selected_swiper {
+        border: #fff 1px solid; /* При активации кнопки изменить цвет окантовки */
+        background-color: #000000; /* При активации кнопки изменить цвет фона */
+    }
+
+    .round_swiper:hover {
+        background-color: #000000;; /* При наведении на кнопку изменить цвет фона */
     }
 
     .second_block__card__image {
@@ -138,26 +160,32 @@
         height: 40px;
         margin-top: 25px;
         margin-left: 10px;
+        margin-bottom: 7px;
     }
 
     .second_block__card__title, .second_block__card__title_edited {
         margin-left: 12px;
+        margin-top: 15px;
         font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .second_block__card__description, .second_block__card__description_edited {
         font-size: 12px;
         margin-left: 12px;
         margin-right: 3px;
+        margin-top: 0px;
         width: auto;
         height: auto;
     }
     
     .arrow {
+        position: absolute;
         width: 47.25px;
         margin-left: 14px;
         margin-top: 8px;
         margin-bottom: 20px;
+        bottom: 0;
     }
 
     .second_block__text {

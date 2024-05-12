@@ -26,6 +26,7 @@
     <script src="src/js/cards.js" defer></script>
     <script src="src/js/burger.js" defer></script>
     <script src="src/js/redirect.js" defer></script>
+    <script src="src/js/cards.js" defer></script>
 </head>
 <body>
 
@@ -86,11 +87,16 @@
                 <a href="https://belyashik2k.tech/"><img src="/src/images/white_arrow.png" alt="white_arrow" class="arrow"></a>
             </div>
 
-            <div class="second_block__card_edited">
+            <div class="second_block__card_edited hidden">
                 <img src="/src/images/settings.png" alt="second_block_2" class="second_block__card__image">
                 <h2 class="second_block__card__title_edited" id="second_block__card__title_position">Let us handle <br> it for you </h2>
                 <p class="second_block__card__description_edited">You set the objectives, and we handle your campaigns from A to Z. Let the team of industry experts bring your objectives to life through high-quality campaigns with guaranteed ROI.</p>
                 <a href="https://belyashik2k.tech/"><img src="/src/images/black_arrow.png" alt="black_arrow" class="arrow"></a>
+            </div>
+
+            <div class="swiper">
+                <button class="round_swiper" id="sw_1" onclick="updateSwiper(this.id)"></button>
+                <button class="round_swiper" id="sw_2" onclick="updateSwiper(this.id)"></button>
             </div>
 
         </div>
