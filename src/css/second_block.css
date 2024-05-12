@@ -37,6 +37,10 @@
     border-radius: 10px 10px 10px 10px; 
 }
 
+.second_block__cards a {
+    margin: 0px;
+}
+
 .second_block__card__title {
     font-family: var(--font-family);
     font-weight: 700;

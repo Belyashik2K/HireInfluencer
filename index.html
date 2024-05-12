@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="src/css/responsive.css">
     <script src="src/js/cards.js" defer></script>
     <script src="src/js/burger.js" defer></script>
+    <script src="src/js/redirect.js" defer></script>
 </head>
 <body>
 
@@ -39,11 +40,11 @@
                 <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">About</a></li>
                 <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Influencer</a></li>
                 <li class="header__nav__item"><a href="https://belyashik2k.tech/" class="header__link">Contact</a></li>
-                <button class="header__button" id="burger">Create account</button> 
+                <button class="header__button" id="burger" onclick="redirectTo()">Create account</button> 
             </ul>
         </nav>
 
-        <button class="header__button">Create account</button> 
+        <button class="header__button" onclick="redirectTo()">Create account</button> 
         <button class="header__burger_menu">
             <img src="/src/images/burger.png" alt="burger_menu" class="burger_menu" id="burger_menu" onclick="openMenu()">
         </button>
@@ -60,8 +61,8 @@
             <p class="first_block__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi <br> vulputate nec amet purus mauris nibh. Neque, dictum urna</p>
 
             <nav class="first_bloсk__buttons">
-                <button class="first_block__button" id="first_block__button_need_inf">I need influencer</button>
-                <button class="first_block__button" id="first_block__button_be_inf">I am influencer</button>    
+                <button class="first_block__button" id="first_block__button_need_inf" onclick="redirectTo()">I need influencer</button>
+                <button class="first_block__button" id="first_block__button_be_inf" onclick="redirectTo()">I am influencer</button>    
             </nav>
         </div>
         
@@ -82,14 +83,14 @@
                 <img src="/src/images/lupa.png" alt="second_block_1" class="second_block__card__image">
                 <h2 class="second_block__card__title">Simply do it <br> by yourself</h2>
                 <p class="second_block__card__description">With a large database of influencers at your disposal, find those who match your own criteria, set up and manage campaigns and get the results you want for your business, no matter the size.</p>
-                <img src="/src/images/white_arrow.png" alt="white_arrow" class="arrow">
+                <a href="https://belyashik2k.tech/"><img src="/src/images/white_arrow.png" alt="white_arrow" class="arrow"></a>
             </div>
 
             <div class="second_block__card_edited">
                 <img src="/src/images/settings.png" alt="second_block_2" class="second_block__card__image">
                 <h2 class="second_block__card__title_edited" id="second_block__card__title_position">Let us handle <br> it for you </h2>
                 <p class="second_block__card__description_edited">You set the objectives, and we handle your campaigns from A to Z. Let the team of industry experts bring your objectives to life through high-quality campaigns with guaranteed ROI.</p>
-                <img src="/src/images/black_arrow.png" alt="black_arrow" class="arrow">
+                <a href="https://belyashik2k.tech/"><img src="/src/images/black_arrow.png" alt="black_arrow" class="arrow"></a>
             </div>
 
         </div>
@@ -202,7 +203,7 @@
                 
         <div class="case_studies__header">
             <h1 class="case_studies__title">Case studies</h1>
-            <p class="case_studies__additional_info">24 Projects Completed <img class ="case_studies__arrow" src="/src/images/green_arrow.png" alt="arrow"> </p>
+            <a href="https://belyashik2k.tech/"><p class="case_studies__additional_info">24 Projects Completed <img class ="case_studies__arrow" src="/src/images/green_arrow.png" alt="arrow"> </p></a>
         </div>
 
         <div class="case_studies__info">
@@ -390,7 +391,7 @@
                 <div class="free_trial__header">
                     <h1 class="free_trial__title">Start a free trial</h1>
                     <p class="free_trial__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempor morbi <br> vulputate nec amet purus mauris nibh. Neque, dictum urna</p>
-                    <button class="free_trial__button">Create free account</button>
+                    <button class="free_trial__button" onclick="redirectTo()">Create free account</button>
                 </div>
             </div>    
         </div>
