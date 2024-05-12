@@ -63,8 +63,6 @@ function updateCards(id) {
     });
 }
 
-// Кнопка нажимается 2 раза что делать
-
 function move(id) {
 
     const cardsContainer = document.querySelector('.influencers__cards');
