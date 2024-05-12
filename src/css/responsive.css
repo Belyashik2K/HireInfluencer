@@ -346,15 +346,16 @@
 
     .case_studies__title {
         font-size: 27px;
+        margin-bottom: 8px;
     }
 
     .case_studies__additional_info {
-        font-size: 19px;
+        font-size: 16px;
     }
 
     .case_studies__arrow {
-        width: 23px;
-        height: 13px;
+        width: 18px;
+        height: 10px;
     }
 
     .case_studies {
@@ -369,22 +370,27 @@
 
     .case_studies__info {
         flex-direction: column;
+        height: auto;
     }
 
     .statistic-container {
+        margin-top: 7px;
+        margin-bottom: 18px;
         width: 100%;
     }
 
     .statistic__title {
-        font-size: 24px;
+        font-size: 21px;
     }
 
     .statistic__description {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .statistic__row {
+        justify-content: space-between;
         gap: 20px;
+        margin: 25px 0px 25px 0px;
     }
 
     .case_studies__header {
