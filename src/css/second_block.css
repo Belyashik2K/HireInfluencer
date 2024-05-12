@@ -1,8 +1,8 @@
 .second_block__background {
     display: flex;
     background: #6f764d;
-    width: 100%;
-    height: 677px;   
+    height: 677px; 
+    gap: 80px;  
 }
 
 .second_block__title {
@@ -25,7 +25,8 @@
 .second_block__cards {
     display: flex;
     justify-content: center;
-    gap: 45px;
+    gap: 15px;
+    margin-left: 0px;
 }
 
 .second_block__card {
@@ -108,4 +109,8 @@
 .arrow {
     margin-left: 24px;
     margin-bottom: 24px;
+}
+
+.second_block__text {
+    margin-right: 0px;
 }

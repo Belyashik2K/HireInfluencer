@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     firstCategory[0].classList.add("selected");
     updateCards("fb_cat");
 
+    const firstSecondBlockCategory = document.querySelector('.swiper').querySelectorAll(".round_swiper");
+    firstSecondBlockCategory[0].classList.add("selected_swiper");
+
     // if (window.innerWidth < 420) {
     //     const ids = ["arrow_left", "arrow_right"];
     //     ids.forEach(id => {
@@ -100,6 +103,25 @@ function move(id) {
         cards[next - 1].classList.remove("hidden");
         cards[next - 1].classList.add("active");
     }
+}
+
+function updateSwiper(id) {
+
+    if (id == "sw_2") {
+        const oldSwiper = document.getElementById("sw_1");
+        oldSwiper.classList.remove("selected_swiper");
+        document.getElementsByClassName("second_block__card")[0].classList.add("hidden");
+        document.getElementById("sw_2").classList.add("selected_swiper");
+        document.getElementsByClassName("second_block__card_edited")[0].classList.remove("hidden");
+    }
+    else {
+        const oldSwiper = document.getElementById("sw_2");
+        oldSwiper.classList.remove("selected_swiper");
+        document.getElementsByClassName("second_block__card_edited")[0].classList.add("hidden");
+        document.getElementById("sw_1").classList.add("selected_swiper");
+        document.getElementsByClassName("second_block__card")[0].classList.remove("hidden");
+    }
+
 }
 
 info_for_cards = {
@@ -350,3 +372,5 @@ info_for_cards = {
         },
     },
 };
+
+

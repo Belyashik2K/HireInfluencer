@@ -102,11 +102,13 @@
 
     .second_block__cards {
         flex-direction: column;
+        margin: auto;
     }
 
     .second_block__background {
         height: 100%;
         flex-direction: column;
+        gap: 0px;
     }
 
     .second_block__title {
@@ -125,10 +127,32 @@
     .second_block__card, .second_block__card_edited {
         width: 230px;
         height: 327px;
+        position: relative;
     }
 
-    .second_block__card_edited {
-        margin-bottom: 50px;
+    .swiper {
+        display: block;
+    }
+
+    
+    .round_swiper {
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%; /* Сделать кнопку круглой */
+        border: 1px solid black; /* Добавить черную окантовку */
+        cursor: pointer; /* Указать курсор в виде руки при наведении */
+        transition: background-color 0.3s;
+        margin-bottom: 35px;
+    }
+
+    .selected_swiper {
+        border: #fff 1px solid; /* При активации кнопки изменить цвет окантовки */
+        background-color: #000000; /* При активации кнопки изменить цвет фона */
+    }
+
+    .round_swiper:hover {
+        background-color: #000000;; /* При наведении на кнопку изменить цвет фона */
     }
 
     .second_block__card__image {
@@ -136,26 +160,36 @@
         height: 40px;
         margin-top: 25px;
         margin-left: 10px;
+        margin-bottom: 7px;
     }
 
     .second_block__card__title, .second_block__card__title_edited {
         margin-left: 12px;
+        margin-top: 15px;
         font-size: 20px;
+        margin-bottom: 10px;
     }
 
     .second_block__card__description, .second_block__card__description_edited {
         font-size: 12px;
         margin-left: 12px;
         margin-right: 3px;
+        margin-top: 0px;
         width: auto;
         height: auto;
     }
     
     .arrow {
+        position: absolute;
         width: 47.25px;
         margin-left: 14px;
         margin-top: 8px;
         margin-bottom: 20px;
+        bottom: 0;
+    }
+
+    .second_block__text {
+        margin: auto;
     }
 
     .third_block__logo {
@@ -185,7 +219,31 @@
     .third_block__partners {
         flex-direction: column;
         margin: auto;
-        gap: 40px;
+        gap: 20px;
+    }
+
+    .partner__row {
+        gap:30px
+    }
+
+    #p1 {
+        width: 104.3px;
+    }
+
+    #p2 {
+        width: 112px;
+    }
+
+    #p3 {
+        width: 58.1px;
+    }
+
+    #p4 {
+        width: 128.1px;
+    }
+
+    #p5 {
+        width: 82.6px;
     }
 
     .advantages__preambula {
@@ -316,15 +374,16 @@
 
     .case_studies__title {
         font-size: 27px;
+        margin-bottom: 8px;
     }
 
     .case_studies__additional_info {
-        font-size: 19px;
+        font-size: 16px;
     }
 
     .case_studies__arrow {
-        width: 23px;
-        height: 13px;
+        width: 18px;
+        height: 10px;
     }
 
     .case_studies {
@@ -339,22 +398,27 @@
 
     .case_studies__info {
         flex-direction: column;
+        height: auto;
     }
 
     .statistic-container {
+        margin-top: 7px;
+        margin-bottom: 18px;
         width: 100%;
     }
 
     .statistic__title {
-        font-size: 24px;
+        font-size: 21px;
     }
 
     .statistic__description {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .statistic__row {
+        justify-content: space-between;
         gap: 20px;
+        margin: 25px 0px 25px 0px;
     }
 
     .case_studies__header {
