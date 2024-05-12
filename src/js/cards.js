@@ -107,20 +107,21 @@ function move(id) {
 
 function updateSwiper(id) {
 
-    if (id == "sw_2") {
-        const oldSwiper = document.getElementById("sw_1");
-        oldSwiper.classList.remove("selected_swiper");
-        document.getElementsByClassName("second_block__card")[0].classList.add("hidden");
-        document.getElementById("sw_2").classList.add("selected_swiper");
-        document.getElementsByClassName("second_block__card_edited")[0].classList.remove("hidden");
+    const omg = {
+        "sw_1": "sw_2",
+        "sw_2": "sw_1",
     }
-    else {
-        const oldSwiper = document.getElementById("sw_2");
-        oldSwiper.classList.remove("selected_swiper");
-        document.getElementsByClassName("second_block__card_edited")[0].classList.add("hidden");
-        document.getElementById("sw_1").classList.add("selected_swiper");
-        document.getElementsByClassName("second_block__card")[0].classList.remove("hidden");
+
+    const noWay = {
+        "sw_1": ["second_block__card_edited", "second_block__card"],
+        "sw_2": ["second_block__card", "second_block__card_edited"],
     }
+
+    const oldSwiper = document.getElementById(omg[id]);
+    oldSwiper.classList.remove("selected_swiper");
+    document.getElementsByClassName(noWay[id][0])[0].classList.add("hidden");
+    document.getElementById(id).classList.add("selected_swiper");
+    document.getElementsByClassName(noWay[id][1])[0].classList.remove("hidden");
 
 }
 
