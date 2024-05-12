@@ -132,14 +132,15 @@
     }
 
     .swiper {
-        display: block;
+        display: flex;
+        gap: 10px;
     }
 
     
     .round_swiper {
         display: inline-block;
-        width: 13px;
-        height: 13px;
+        width: 15px;
+        height: 15px;
         border-radius: 50%; /* Сделать кнопку круглой */
         border: 1px solid black; /* Добавить черную окантовку */
         cursor: pointer; /* Указать курсор в виде руки при наведении */
