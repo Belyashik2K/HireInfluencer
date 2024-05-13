@@ -78,29 +78,40 @@
             <p class="second_block__description">Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Tempor morbi vulputate nec amet purus</p>
         </div>
 
-        <div class="second_block__cards">
-
-            <div class="second_block__card">
-                <img src="/src/images/lupa.png" alt="second_block_1" class="second_block__card__image">
-                <h2 class="second_block__card__title">Simply do it <br> by yourself</h2>
-                <p class="second_block__card__description">With a large database of influencers at your disposal, find those who match your own criteria, set up and manage campaigns and get the results you want for your business, no matter the size.</p>
-                <a href="https://belyashik2k.tech/"><img src="/src/images/white_arrow.png" alt="white_arrow" class="arrow"></a>
+        <div class="second_block__with_arrow">
+            <button id="arrow_left" onclick="updateSwiper(this.id)">
+                <img src="/src/images/arrow-left.png" alt="arrow" id="white">
+            </button>
+    
+            <div class="second_block__cards">
+    
+                <div class="second_block__card">
+                    <img src="/src/images/lupa.png" alt="second_block_1" class="second_block__card__image">
+                    <h2 class="second_block__card__title">Simply do it <br> by yourself</h2>
+                    <p class="second_block__card__description">With a large database of influencers at your disposal, find those who match your own criteria, set up and manage campaigns and get the results you want for your business, no matter the size.</p>
+                    <a href="https://belyashik2k.tech/"><img src="/src/images/white_arrow.png" alt="white_arrow" class="arrow"></a>
+                </div>
+    
+                <div class="second_block__card_edited hidden">
+                    <img src="/src/images/settings.png" alt="second_block_2" class="second_block__card__image">
+                    <h2 class="second_block__card__title_edited" id="second_block__card__title_position">Let us handle <br> it for you </h2>
+                    <p class="second_block__card__description_edited">You set the objectives, and we handle your campaigns from A to Z. Let the team of industry experts bring your objectives to life through high-quality campaigns with guaranteed ROI.</p>
+                    <a href="https://belyashik2k.tech/"><img src="/src/images/black_arrow.png" alt="black_arrow" class="arrow"></a>
+                </div>
+    
+                <div class="swiper">
+                    <button class="round_swiper" id="sw_1" onclick="updateSwiper(this.id)"></button>
+                    <button class="round_swiper" id="sw_2" onclick="updateSwiper(this.id)"></button>
+                </div>
+    
             </div>
-
-            <div class="second_block__card_edited hidden">
-                <img src="/src/images/settings.png" alt="second_block_2" class="second_block__card__image">
-                <h2 class="second_block__card__title_edited" id="second_block__card__title_position">Let us handle <br> it for you </h2>
-                <p class="second_block__card__description_edited">You set the objectives, and we handle your campaigns from A to Z. Let the team of industry experts bring your objectives to life through high-quality campaigns with guaranteed ROI.</p>
-                <a href="https://belyashik2k.tech/"><img src="/src/images/black_arrow.png" alt="black_arrow" class="arrow"></a>
-            </div>
-
-            <div class="swiper">
-                <button class="round_swiper" id="sw_1" onclick="updateSwiper(this.id)"></button>
-                <button class="round_swiper" id="sw_2" onclick="updateSwiper(this.id)"></button>
-            </div>
+            
+            <button id="arrow_right" onclick="updateSwiper(this.id)">
+                <img src="/src/images/arrow-right.png" alt="arrow" id="white">
+            </button>
+        </div>    
 
         </div>
-    </div>
 
     <div class="third_block">
 

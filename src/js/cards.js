@@ -107,6 +107,8 @@ function move(id) {
 
 function updateSwiper(id) {
 
+    var b_id = id
+
     const omg = {
         "sw_1": "sw_2",
         "sw_2": "sw_1",
@@ -117,11 +119,20 @@ function updateSwiper(id) {
         "sw_2": ["second_block__card", "second_block__card_edited"],
     }
 
-    const oldSwiper = document.getElementById(omg[id]);
+    const data = id.split("_")[0];
+
+    if (data == "arrow") {
+        const oldSwiper = document.getElementsByClassName("selected_swiper")[0];
+        b_id = omg[oldSwiper.id];
+    }
+
+    console.log(b_id);
+
+    const oldSwiper = document.getElementById(omg[b_id]);
     oldSwiper.classList.remove("selected_swiper");
-    document.getElementsByClassName(noWay[id][0])[0].classList.add("hidden");
-    document.getElementById(id).classList.add("selected_swiper");
-    document.getElementsByClassName(noWay[id][1])[0].classList.remove("hidden");
+    document.getElementsByClassName(noWay[b_id][0])[0].classList.add("hidden");
+    document.getElementById(b_id).classList.add("selected_swiper");
+    document.getElementsByClassName(noWay[b_id][1])[0].classList.remove("hidden");
 
 }
 

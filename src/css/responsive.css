@@ -104,6 +104,7 @@
         flex-direction: column;
         margin: auto;
         gap: 15px;
+        margin-bottom: 40px;
     }
 
     .second_block__background {
@@ -145,7 +146,6 @@
         border: 1px solid black; /* Добавить черную окантовку */
         cursor: pointer; /* Указать курсор в виде руки при наведении */
         transition: background-color 0.3s;
-        margin-bottom: 40px;
     }
 
     .selected_swiper {
@@ -188,6 +188,12 @@
         margin-top: 8px;
         margin-bottom: 20px;
         bottom: 0;
+    }
+
+    .second_block__with_arrow {
+        display: flex;
+        margin: auto;
+        gap: 15px;
     }
 
     .second_block__text {
@@ -480,7 +486,11 @@
         outline: none;
         box-shadow: none;
         border: none;
-        background-color: white;
+        background-color: transparent;
+    }
+
+    #white {
+        filter: invert(1);
     }
 
     .influencers__menu {
