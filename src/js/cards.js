@@ -30,6 +30,12 @@ function updateCards(id) {
     // Get the cards
     const cards = cardsContainer.querySelectorAll('.influencers__card');
     // Loop through the cards
+
+    const oldSwiper = document.getElementsByClassName("selected_swiper_b")[0];
+    oldSwiper.classList.remove("selected_swiper_b");
+    const newSwiper = document.getElementById("swb_1");
+    newSwiper.classList.add("selected_swiper_b");
+
     counter = 0;
     cards.forEach(card => {
         counter += 1;
@@ -83,12 +89,33 @@ function move(id) {
         next = parseInt(nextCard) + 1;
     }
 
+    const data = id.split("_");
+
     categoryInfo = info_for_cards[CategoryName];
 
     cards.forEach(card => {
         card.classList.remove("active");
         card.classList.add("hidden");
     });
+
+    if (data[0] == "swb") {
+        const oldCategory = document.getElementsByClassName("selected_swiper_b")[0];
+        oldCategory.classList.remove("selected_swiper_b");
+        const nextCategory = document.getElementById(id);
+        nextCategory.classList.add("selected_swiper_b");
+        next = data[1]; 
+        cards[next - 1].classList.remove("hidden");
+        cards[next - 1].classList.add("active");
+        return;
+    }
+
+    if (next > 4) {
+        next = 1;
+    } else if (next < 1) {
+        next = 4;
+    }
+
+    updateInfSwiper(next);
 
     if (next < 1) {
         cards[Object.keys(categoryInfo).length - 1].classList.remove("hidden");
@@ -103,6 +130,17 @@ function move(id) {
         cards[next - 1].classList.remove("hidden");
         cards[next - 1].classList.add("active");
     }
+}
+
+function updateInfSwiper(id) {
+    
+    const oldCategory = document.getElementsByClassName("selected_swiper_b");
+    oldCategory[0].classList.remove("selected_swiper_b");
+
+    const newCategory = document.getElementById("swb_" + id);
+    console.log(newCategory);
+    newCategory.classList.add("selected_swiper_b");
+    
 }
 
 function updateSwiper(id) {

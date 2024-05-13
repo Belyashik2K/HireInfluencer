@@ -148,7 +148,7 @@
         transition: background-color 0.3s;
     }
 
-    .selected_swiper {
+    .selected_swiper, .selected_swiper_b {
         border: #fff 1px solid; /* При активации кнопки изменить цвет окантовки */
         background-color: #000000; /* При активации кнопки изменить цвет фона */
     }
@@ -478,6 +478,7 @@
 
     .influencers__cards {
         flex-direction: column;
+        gap: 25px;
     }
 
     #arrow_left, #arrow_right {
