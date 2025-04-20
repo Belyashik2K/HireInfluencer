@@ -1,3 +1,3 @@
 function redirectTo() {
-    window.location.href = "https://belyashik2k.tech/";
+    window.location.href = "https://belyashik2k.ru/";
   }
